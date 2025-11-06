@@ -1,55 +1,49 @@
 import Link from 'next/link';
+import { DropdownMenu } from '.';
 
 export default function DesktopMenuLinks(props) {
   return (
     <div
       className={`${
-        !props.fromFooter
-          ? 'hidden md:block'
-          : 'block col-span-4 md:col-start-1 col-start-4'
+        props.fromFooter
+          ? 'lg:col-span-3 col-span-12'
+          : 'hidden lg:block'
       }`}>
-      <div className={`flex flex-${props.flexDirection} space-x-4`}>
+      <div
+        className={`flex flex-${props.flexDirection} lg:space-x-4 text-ctext lg:items-start items-center lg:pb-0`}>
         <p
-          className={`text-ctext dark:text-ctext-light font-bold pb-4 text-xl ${
-            props.fromFooter ? 'block' : 'hidden'
+          className={`font-bold pb-3 text-2xl ${
+            props.fromFooter ? 'block text-secondary-light' : 'hidden'
           }`}>
-          Quick Links
+          Navigazione
         </p>
         <Link
           href="/"
-          className={`px-3 py-2 rounded-md font-medium transition-colors text-ctext dark:text-ctext-light ${
+          className={`lg:py-2 py-1 rounded-md font-medium transition-colors  ${
             props.fromFooter
-              ? 'hover:underline underline-offset-4'
-              : 'dark:hover:bg-secondary-light-100 hover:bg-secondary-100'
+              ? 'hover:underline underline-offset-4 text-secondary-light'
+              : 'hover:text-primary-300 px-3'
           }`}>
           Home
         </Link>
         <Link
           href="/about"
-          className={`px-3 py-2 rounded-md font-medium transition-colors text-ctext dark:text-ctext-light ${
+          className={`lg:py-2 py-1 rounded-md font-medium transition-colors  ${
             props.fromFooter
-              ? 'hover:underline underline-offset-4'
-              : 'dark:hover:bg-secondary-light-100 hover:bg-secondary-100'
+              ? 'hover:underline underline-offset-4 text-secondary-light'
+              : 'hover:text-primary-300 px-3'
           }`}>
-          About
+          Chi Sono
         </Link>
-        <Link
-          href="/services"
-          className={`px-3 py-2 rounded-md font-medium transition-colors text-ctext dark:text-ctext-light ${
-            props.fromFooter
-              ? 'hover:underline underline-offset-4'
-              : 'dark:hover:bg-secondary-light-100 hover:bg-secondary-100'
-          }`}>
-          Services
-        </Link>
+        {!props.fromFooter && <DropdownMenu />}
         <Link
           href="/contact"
-          className={`px-3 py-2 rounded-md font-medium transition-colors text-ctext dark:text-ctext-light ${
+          className={`lg:py-2 py-1 rounded-md font-medium transition-colors  ${
             props.fromFooter
-              ? 'hover:underline underline-offset-4'
-              : 'dark:hover:bg-secondary-light-100 hover:bg-secondary-100'
+              ? 'hover:underline underline-offset-4 text-secondary-light'
+              : 'hover:text-primary-300 px-3'
           }`}>
-          Contact
+          Contatti
         </Link>
       </div>
     </div>

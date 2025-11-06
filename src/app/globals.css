@@ -1,21 +1,104 @@
 @import 'tailwindcss';
 
-/* This makes theme switcher work */
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
 @theme {
-  --color-primary: oklch(15% 0.04 285);
-  --color-primary-light: oklch(80% 0.077 290);
+  --color-primary-900: oklch(0.2966 0.0901 252.5);
+  --color-primary-500: oklch(0.4091 0.102087 244.5829);
+  --color-primary-300: oklch(0.5237 0.115456 237.6301);
+  --color-primary-100: oklch(77.72% 0.1164 237.92);
   --color-secondary: oklch(22% 0.008 308);
   --color-secondary-100: oklch(22% 0.008 308 / 0.1);
-  --color-secondary-light: oklch(90% 0.01 325);
-  --color-secondary-light-100: oklch(90% 0.01 325 / 0.1);
-  --color-cta: oklch(58% 0.18 141);
-  --color-ctext: oklch(22% 0.008 308);
-  --color-ctext-light: oklch(90% 0.01 325);
+  --color-secondary-light: oklch(94.611% 0.00011 271.152);
+  --color-secondary-light-100: oklch(98.265% 0.00511 229.665 / 0.1);
+  --color-secondary-light-hover: oklch(0.8367 0.00011 271.152);
+  --color-cta-100: oklch(0.699 0.1257 181.35);
+  --color-cta-900: oklch(0.5127 0.0882 183.48);
+  --color-ctext: oklch(23.116% 0.00193 286.052);
+  --color-ctext-light: oklch(94.611% 0.00011 271.152);
+  --color-grey-blue: oklch(0.3957 0.0297 239.24);
   /* ... */
+  --animate-shake: shake 0.2s ease-in-out;
+  --font-title: 'Poppins', sans-serif;
+  --font-text: 'var(--font-spectral)', serif; /* Spectral */
+  /* ... */
+  --tracking-title: -3px;
+  --tracking-cta: 1px;
+  --leading-text: 1.5;
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
-  color: oklch(58.319% 0.18576 141.036);
+  color: oklch(23.116% 0.00193 286.052);
+  color: oklch(0.3957 0.0297 239.24);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.curved {
+  clip-path: ellipse(85% 100% at top);
+}
+
+/* Embla Carousel Styles */
+.embla {
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  /* --slide-size: 33%; */
+}
+.embla__viewport {
+  overflow: hidden;
+  max-width: 50vw;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  transform: translate3d(
+    0,
+    0,
+    0
+  ); /* Hardware acceleration, così il browser utilizza la GPU e non la CPU */
+  padding-left: var(--slide-spacing);
+}
+.embla__slide__number {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  height: var(--slide-height);
+  user-select: none;
+}
+.embla__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.embla__button {
+  cursor: pointer;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.embla__button__svg {
+  width: 35%;
+  height: 35%;
 }

@@ -3,7 +3,11 @@ module.exports = {
   darkmode: 'class',
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        spectral: ['var(--font-spectral)'],
+      },
+    },
   },
   plugins: [],
 };

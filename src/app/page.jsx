@@ -1,6 +1,6 @@
 'use client';
 import Head from 'next/head';
-import { Hero, Header, Footer } from '@/ui';
+import { Hero, ServiziSection, AboutSection, Reviews } from '@/ui';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
     setTheme(localTheme);
   });
   return (
-    <div data-theme={theme}>
+    <div className="font-serif">
       <Head>
         <title>Home</title>
         <meta name="description" content="Home page description" />
@@ -18,15 +18,12 @@ export default function Home() {
         <meta property="og:description" content="og description" />
         <meta property="og:image" content="og-image.jpg" />
       </Head>
-      <header className="fixed top-0 left-0 w-full z-50">
-        <Header navToggle={setTheme}></Header>
-      </header>
-      <main>
-        <Hero></Hero>
+      <main className="font-title">
+        <Hero />
+        <ServiziSection />
+        <AboutSection />
+        <Reviews />
       </main>
-      <footer className="bottom-0 w-full">
-        <Footer />
-      </footer>
     </div>
   );
 }

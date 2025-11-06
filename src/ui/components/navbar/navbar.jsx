@@ -1,26 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import {
-  DarkMode,
-  BurgerMenu,
-  DesktopMenuLinks,
-  MobileMenuLinks,
-  Logo,
-} from '..';
+import { BurgerMenu, DesktopMenuLinks, MobileMenuLinks, Logo } from '..';
+import Link from 'next/link';
+import { HiPhone } from 'react-icons/hi';
 
-export default function Navbar(props) {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  const [theme, setTheme] = useState(null);
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('theme');
-    setTheme(localTheme);
-  });
-
-  useEffect(() => {
-    props.navToggle(theme);
     document.addEventListener('scroll', () => {
       setHasScrolled(window.scrollY > 0 ? true : false);
     });
@@ -31,25 +20,24 @@ export default function Navbar(props) {
   };
 
   return (
-    <nav>
-      <div className="mx-auto mt-8 rounded-3xl px-8 w-[80%] backdrop-blur-sm bg-secondary-light/20 dark:bg-secondary/30">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Logo />
-          {/* Desktop Menu */}
-          <DesktopMenuLinks />
-          {/* Theme Toggle & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
-            {/* Theme Toggle Button */}
-            <DarkMode toggle={setTheme}></DarkMode>
-            {/* Mobile menu button */}
-            <BurgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && <MobileMenuLinks setIsMenuOpen={setIsMenuOpen} />}
+    <nav className="z-40 bg-secondary-light/70 backdrop-blur-sm flex justify-between items-center h-16 mx-auto rounded-full w-[80%] fixed top-0 justify-self-center py-10 px-6 mt-8 shadow-lg">
+      {/* Logo */}
+      <Logo />
+      {/* Desktop Menu */}
+      <DesktopMenuLinks />
+      <Link
+        className="hidden lg:flex group tracking-cta text-xl font-semibold bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-3xl shadow-lg flex-row items-center gap-2"
+        href="#appointment">
+        Prenota Ora <HiPhone className="text-xl group-hover:animate-shake" />
+      </Link>
+      {/* Mobile Menu Button */}
+      <div className="flex items-center space-x-4 md:hidden">
+        {/* Mobile menu button */}
+        <BurgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && <MobileMenuLinks setIsMenuOpen={setIsMenuOpen} />}
     </nav>
   );
 }

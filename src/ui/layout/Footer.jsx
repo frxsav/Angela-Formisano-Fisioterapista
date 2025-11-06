@@ -4,18 +4,21 @@ import {
   Socials,
   Copyright,
   DesktopMenuLinks,
+  ServicesLinks,
 } from '../components';
 
 export default function Footer() {
   return (
     <>
-      <div className="bg-secondary-light dark:bg-secondary p-4 px-12">
-        <div className="grid md:justify-start justify-center col-span-12 pb-8 pt-4">
-          <Logo />
-        </div>
-        <div className="grid grid-cols-12 border-b-1 border-ctext dark:border-ctext-light">
-          {/* Quick Links */}
+      <div className="bg-secondary p-4 px-12 pt-12">
+        <div className="grid grid-cols-12 border-b-1 border-ctext-light">
+          <div className="grid lg:justify-start items-start justify-center lg:col-span-3 col-span-12 lg:pb-0 pb-6">
+            <Logo />
+          </div>
+          {/* Navigazione */}
           <DesktopMenuLinks flexDirection="col" fromFooter={true} />
+          {/* Lista Servizi */}
+          <ServicesLinks />
           {/* Privacy, Cookies and Terms&Cons */}
           <LegalLinks />
           <div className="col-span-12 flex justify-center md:justify-start">
