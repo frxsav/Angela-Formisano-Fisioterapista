@@ -1,6 +1,6 @@
 'use client';
 import Head from 'next/head';
-import { Hero, ServiziSection, AboutSection, Reviews } from '@/ui';
+import { Hero, ServiziSection, AboutSection, Reviews, Faq } from '@/ui';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
         <ServiziSection />
         <AboutSection />
         <Reviews />
+        <Faq />
       </main>
     </div>
   );

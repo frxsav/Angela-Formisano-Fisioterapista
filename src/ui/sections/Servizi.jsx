@@ -13,7 +13,7 @@ export default function ServiziSection() {
         <h2 className="font-text lg:text-5xl text-4xl font-black tracking-tight uppercase text-shadow-sm lg:text-start text-center pb-1">
           I miei servizi di Fisioterapia ad Ercolano
         </h2>
-        <div className="border-t-5 border-primary-300 h-[1px] w-[10%]"></div>
+        <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
         <h3 className="lg:text-3xl text-2xl lg:text-start text-center font-text text-ctext/80 pt-3">
           Trattamenti fisioterapici su misura per ogni esigenza del paziente
         </h3>

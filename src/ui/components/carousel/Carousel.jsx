@@ -59,7 +59,7 @@ const Carousel = (props) => {
               className="embla__slide flex-none lg:basis-1/3 md:basis-1/2 basis-full"
               key={index}>
               <div
-                className="embla__slide__number px-12 lg:rounded-xl pt-18 pb-12 bg-hero-pattern"
+                className="embla__slide__number px-12 lg:rounded-xl pt-18 pb-12 bg-hero-pattern min-h-[19rem] justify-items-center"
                 style={{
                   background: `linear-gradient(oklch(0.2966 0.0901 252.5 / 0.25), oklch(0.2966 0.0901 252.5 / 0.75)), url(${servizio.img}) center center / cover no-repeat`,
                 }}>

@@ -13,7 +13,7 @@ export default function AboutSection() {
           <h3 className="text-5xl font-bold tracking-title font-title uppercase w-[75%]">
             La mia Formazione ed Esperienza
           </h3>
-          <div className="border-t-5 border-primary-300 h-[1px] w-[10%]"></div>
+          <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
           <p className="text-xl text-ctext/90 font-text leading-text w-[75%]">
             Mi sono laureata nel 2018 in <strong>Fisioterapia</strong> alla
             Federico II di Napoli, conseguendo successivamente{' '}
@@ -26,7 +26,7 @@ export default function AboutSection() {
             <strong>Rieducazione Posturale.</strong>
           </p>
           <Link
-            className="flex w-[30%] tracking-cta text-xl justify-center bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-3xl shadow-lg flex-row items-end gap-2"
+            className="flex w-[30%] tracking-cta text-xl justify-center bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-full shadow-lg flex-row items-end gap-2"
             href="#approfondisci">
             Approfondisci{' '}
             <HiOutlineArrowUturnRight className="text-xl scale-y-[-1]" />
