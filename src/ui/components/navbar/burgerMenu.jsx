@@ -1,6 +1,6 @@
 export default function BurgerMenu(props) {
   return (
-    <div className="md:hidden">
+    <div>
       <button
         onClick={props.toggleMenu}
         className="p-2 rounded-md text-ctext hover:bg-secondary-100 focus:outline-none"
