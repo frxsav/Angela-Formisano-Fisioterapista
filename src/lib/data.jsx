@@ -103,11 +103,34 @@ export const reviews = [
 export const studi = [
   'Laurea in Fisioterapia',
   'Master in Posturologia',
-  'Specializzazione in qualcos\'altro',
+  "Specializzazione in qualcos'altro",
 ];
 
 export const specializzazioni = [
   'Patologie del sistema muscolo-scheletrico',
   'Linfodrenaggio',
   'Rieducazione posturale con Metodo Raggi e Metodo Pancafit',
+];
+
+export const timelineItems = [
+  {
+    title: 'Laurea in Fisioterapia',
+    dsc: 'Laureata in Fisioterapia alla Federico II di Napoli a pieni voti con la tesi su questa cosa specifica ecc',
+    year: '2018',
+  },
+  {
+    title: 'Magistrale in Scienze Riabilitative',
+    dsc: "Laurea magistrale in Scienze Riabilitative presso l'università telematica Pegaso a pieni voti con la tesi su questa cosa specifica ecc",
+    year: '2021',
+  },
+  {
+    title: 'Master in Posturologia',
+    dsc: "Master in Posturologia presso l'università dell'Aquila a pieni voti con la tesi su questa cosa specifica ecc",
+    year: '2024',
+  },
+  {
+    title: 'Laurea in Fisioterapia',
+    dsc: 'Laureata in Fisioterapia alla Federico II di Napoli a pieni voti con la tesi su questa cosa specifica ecc',
+    year: 'In corso',
+  },
 ];

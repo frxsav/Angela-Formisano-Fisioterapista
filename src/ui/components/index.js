@@ -7,3 +7,4 @@ export { default as DropdownMenu } from './DropdownMenu';
 export { default as Card } from './Card';
 export { default as Carousel } from './carousel/Carousel';
 export { default as AccordionItem } from './accordion/AccordionItem';
+export { default as Timeline } from './Timeline';
