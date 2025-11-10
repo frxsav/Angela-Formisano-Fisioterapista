@@ -11,19 +11,19 @@ export default function MobileMenuLinks(props) {
           Home
         </Link>
         <Link
-          href="/about"
+          href="/chi-sono"
           className="text-secondary hover:bg-secondary-100 block px-3 py-2 rounded-md font-medium transition-colors"
           onClick={() => props.setIsMenuOpen(false)}>
           About
         </Link>
         <Link
-          href="/services"
+          href="/servizi"
           className="text-secondary hover:bg-secondary-100 block px-3 py-2 rounded-md font-medium transition-colors"
           onClick={() => props.setIsMenuOpen(false)}>
           Services
         </Link>
         <Link
-          href="/contact"
+          href="/contatti"
           className="text-secondary hover:bg-secondary-100 block px-3 py-2 rounded-md font-medium transition-colors"
           onClick={() => propssetIsMenuOpen(false)}>
           Contact

@@ -1,6 +1,14 @@
 'use client';
+
 import Head from 'next/head';
-import { Hero, ServiziSection, AboutSection, Reviews, Faq } from '@/ui';
+import {
+  Hero,
+  ServiziSection,
+  AboutSection,
+  Reviews,
+  Faq,
+  ContattiSection,
+} from '@/ui';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -10,7 +18,7 @@ export default function Home() {
     setTheme(localTheme);
   });
   return (
-    <div className="font-serif">
+    <div>
       <Head>
         <title>Home</title>
         <meta name="description" content="Home page description" />
@@ -24,6 +32,7 @@ export default function Home() {
         <AboutSection />
         <Reviews />
         <Faq />
+        <ContattiSection />
       </main>
     </div>
   );

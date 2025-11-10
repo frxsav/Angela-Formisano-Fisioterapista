@@ -3,15 +3,9 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { HiChevronDown } from 'react-icons/hi';
+import { trattamenti } from '@/lib/data';
 
 export default function DropdownMenu(props) {
-  const trattamenti = [
-    'Posturologia',
-    'Rieducazione motoria',
-    'Terapia manuale',
-    'Terapia strumentale',
-    'Massoterapia',
-  ];
   const [isOpen, setIsOpen] = useState(false);
 
   return (

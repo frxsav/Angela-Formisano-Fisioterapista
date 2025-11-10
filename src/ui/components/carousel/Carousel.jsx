@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {
   PrevButton,
@@ -6,40 +8,10 @@ import {
 } from './CarouselArrowButtons';
 import useEmblaCarousel from 'embla-carousel-react';
 import Link from 'next/link';
+import { servizi } from '@/lib/data';
 
 const Carousel = (props) => {
-  const servizi = [
-    {
-      title: 'Rieducazione Posturale',
-      dsc: 'La rieducazione fa adfdafadfad adfdaa ',
-      id: 1,
-      img: '/images/rieducazione-posturale.webp',
-    },
-    {
-      title: 'Rieducazione Posturale',
-      dsc: 'La rieducazione posturale è un approccio terapeutico',
-      id: 2,
-      img: '/images/rieducazione-posturale-e-linfodrenaggio.webp',
-    },
-    {
-      title: 'Rieducazione Posturale',
-      dsc: 'La rieducazione posturale Questo metodo aiuta a migliorare la posturafuture.',
-      id: 3,
-      img: '/images/rieducazione-posturale.webp',
-    },
-    {
-      title: 'Rieducazione Posturale',
-      dsc: 'manuali. Questo metodo aiuta a migliorare la postura',
-      id: 4,
-      img: '/images/rieducazione-posturale.webp',
-    },
-    {
-      title: 'Rieducazione Posturale',
-      dsc: 'La rieducazione posturale è un approccio terapeutico che mira a correggere, terapeutico che mira a correggere',
-      id: 5,
-      img: '/images/rieducazione-posturale.webp',
-    },
-  ];
+
   const options = { dragFree: true, loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 

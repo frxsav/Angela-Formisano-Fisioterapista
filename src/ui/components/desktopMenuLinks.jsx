@@ -27,7 +27,7 @@ export default function DesktopMenuLinks(props) {
           Home
         </Link>
         <Link
-          href="/about"
+          href="/chi-sono"
           className={`lg:py-2 py-1 rounded-md font-medium transition-colors  ${
             props.fromFooter
               ? 'hover:underline underline-offset-4 text-secondary-light'
@@ -37,7 +37,7 @@ export default function DesktopMenuLinks(props) {
         </Link>
         {!props.fromFooter && <DropdownMenu />}
         <Link
-          href="/contact"
+          href="/contatti"
           className={`lg:py-2 py-1 rounded-md font-medium transition-colors  ${
             props.fromFooter
               ? 'hover:underline underline-offset-4 text-secondary-light'

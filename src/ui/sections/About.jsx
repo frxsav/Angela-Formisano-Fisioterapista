@@ -7,14 +7,14 @@ import { Parallax } from 'react-scroll-parallax';
 
 export default function AboutSection() {
   return (
-    <section className="bg-primary-900/20 text-ctext pt-48 pb-16">
-      <div className="grid grid-cols-12 w-[80%] m-auto">
-        <div className="flex flex-col col-span-6 py-32 relative gap-6">
-          <h3 className="text-5xl font-bold tracking-title font-title uppercase w-[75%]">
+    <section className="bg-linear-to-b from-primary-900/20 to-secondary-light text-ctext pt-48 pb-16">
+      <div className="lg:grid lg:grid-cols-12 flex flex-col w-[80%] m-auto">
+        <div className="flex flex-col lg:col-span-6 md:pt-32 pt-16 pb-32 relative gap-6 lg:items-start items-center">
+          <h3 className="text-5xl font-bold tracking-title font-title uppercase w-[75%] lg:text-start text-center">
             La mia Formazione ed Esperienza
           </h3>
           <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
-          <p className="text-xl text-ctext/90 font-text leading-text w-[75%]">
+          <p className="text-xl text-ctext/90 font-text leading-text w-[75%] lg:text-start text-center">
             Mi sono laureata nel 2018 in <strong>Fisioterapia</strong> alla
             Federico II di Napoli, conseguendo successivamente{' '}
             <strong>Master in Posturologia</strong> e in qualcos'altro.
@@ -26,13 +26,13 @@ export default function AboutSection() {
             <strong>Rieducazione Posturale.</strong>
           </p>
           <Link
-            className="flex w-[30%] tracking-cta text-xl justify-center bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-full shadow-lg flex-row items-end gap-2"
-            href="#approfondisci">
-            Approfondisci{' '}
+            className="flex md:w-[30%] tracking-cta text-xl justify-center bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-full shadow-lg flex-row items-end gap-2"
+            href="/chi-sono">
+            Scopri di più{' '}
             <HiOutlineArrowUturnRight className="text-xl scale-y-[-1]" />
           </Link>
         </div>
-        <div className="flex flex-row gap-6 col-span-6">
+        <div className="flex flex-row gap-6 lg:col-span-6 lg:pb-0 pb-16">
           <Parallax className="flex flex-col" speed={10}>
             <Image
               src="/images/fisio1.webp"

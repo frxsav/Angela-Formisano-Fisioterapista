@@ -31,7 +31,7 @@ export default function Navbar() {
         Prenota Ora <HiPhone className="text-xl group-hover:animate-shake" />
       </Link>
       {/* Mobile Menu Button */}
-      <div className="flex items-center space-x-4 md:hidden">
+      <div className="flex items-center space-x-4 lg:hidden">
         {/* Mobile menu button */}
         <BurgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>

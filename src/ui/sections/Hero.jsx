@@ -22,12 +22,12 @@ export default function Hero() {
           </h2>
           <div className="flex lg:flex-row flex-col gap-6">
             <Link
-              className="tracking-cta lg:self-start self-center text-center font-bold mt-4 bg-cta-100 hover:bg-cta-900 duration-300 text-ctext-light text-lg p-4 rounded-full shadow-lg"
+              className="tracking-cta lg:self-start self-center text-center mt-4 border-1 border-cta-100 bg-cta-100 hover:bg-cta-900 hover:border-cta-900 duration-300 text-ctext-light text-lg p-4 rounded-full shadow-lg"
               href="#appointment">
               Prenota un appuntamento
             </Link>
             <Link
-              className="tracking-cta lg:self-start self-center text-center font-bold mt-4 bg-secondary-light hover:bg-secondary-light-hover duration-300 text-cta-100 text-lg p-4 rounded-full shadow-lg"
+              className="tracking-cta lg:self-start self-center text-center mt-4 border-1 border-cta-100 bg-secondary-light hover:bg-secondary-light-hover duration-300 text-cta-100 text-lg p-4 rounded-full shadow-lg"
               href="#appointment">
               Scopri i trattamenti
             </Link>
