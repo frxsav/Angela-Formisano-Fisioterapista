@@ -8,3 +8,5 @@ export { default as Card } from './Card';
 export { default as Carousel } from './carousel/Carousel';
 export { default as AccordionItem } from './accordion/AccordionItem';
 export { default as Timeline } from './Timeline';
+export { default as ContactForm } from './ContactForm';
+export { default as Map } from './Map';

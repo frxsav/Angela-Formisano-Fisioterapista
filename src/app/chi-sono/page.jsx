@@ -1,8 +1,6 @@
 import Image from 'next/image';
-// import Link from 'next/link';
 import { specializzazioni, studi } from '@/lib/data';
 import { ContattiSection, Timeline } from '@/ui';
-import { HiMiniPlay } from 'react-icons/hi2';
 
 export default function About() {
   return (
@@ -53,7 +51,6 @@ export default function About() {
               Percorso di studi ed approccio
             </h3>
             <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
-
             <Timeline></Timeline>
           </div>
         </div>
