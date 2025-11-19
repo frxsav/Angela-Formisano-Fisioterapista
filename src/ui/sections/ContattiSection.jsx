@@ -10,7 +10,7 @@ export default function ContattiSection(props) {
       <Parallax
         speed={5}
         className="z-40 flex flex-col gap-5 items-center justify-center md:px-16 px-8 py-8 bg-secondary-light/70 backdrop-blur-sm rounded-3xl lg:w-[50%] shadow-xl">
-        <h3 className="text-4xl text-primary-900 text-shadow-primary-900 text-shadow-xs text-center font-bold">
+        <h3 className="text-4xl text-primary-900 text-shadow-2xs text-center font-bold">
           {props.title
             ? props.title
             : 'Hai bisogno di un percorso fisioterapico su misura ad Ercolano?'}
@@ -23,7 +23,9 @@ export default function ContattiSection(props) {
         <Link
           className="flex md:w-[30%] tracking-cta text-xl justify-center bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-full shadow-lg flex-row items-end gap-2"
           href="/contatti">
-          Contattami
+          {props.cta
+            ? props.cta
+            : 'Contattami'}
         </Link>
       </Parallax>
     </section>

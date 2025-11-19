@@ -41,7 +41,7 @@ export const PrevButton = (props) => {
 
   return (
     <button
-      className="cursor-pointer w-[3rem] h-[3rem] bg-cta-100 hover:bg-cta-900 duration-300 rounded-full text-ctext-light flex justify-center items-center"
+      className="cursor-pointer w-[3rem] h-[3rem] bg-primary-300 hover:bg-primary-500 duration-300 rounded-full text-ctext-light flex justify-center items-center"
       type="button"
       {...restProps}>
       <svg className="embla__button__svg" viewBox="0 0 532 532">
@@ -60,7 +60,7 @@ export const NextButton = (props) => {
 
   return (
     <button
-      className="cursor-pointer w-[3rem] h-[3rem] bg-cta-100 hover:bg-cta-900 duration-300 rounded-full text-ctext-light flex justify-center items-center"
+      className="cursor-pointer w-[3rem] h-[3rem] bg-primary-300 hover:bg-primary-500 duration-300 rounded-full text-ctext-light flex justify-center items-center"
       type="button"
       {...restProps}>
       <svg className="embla__button__svg" viewBox="0 0 532 532">

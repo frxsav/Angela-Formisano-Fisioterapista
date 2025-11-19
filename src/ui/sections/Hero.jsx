@@ -12,13 +12,13 @@ export default function Hero() {
       className="bg-[url('/images/trattamento-riabilitazione-posturale.webp')] bg-no-repeat bg-cover bg-center">
       <div className="font-title min-h-[90vh] px-[10%] items-center justify-center flex lg:flex-row flex-col bg-primary-900/75 lg:pt-32 lg:gap-0 gap-6">
         <div className="flex flex-col gap-3 lg:w-[70%] items-center lg:items-start lg:order-first order-last">
-          <h1 className="text-md lg:text-start text-center text-ctext-light uppercase text-shadow-md text-shadow-ctext font-text">
+          <h1 className="text-lg font-bold lg:text-start text-center text-ctext-light tracking-wide uppercase text-shadow-sm font-text w-[75%]">
             <span className="underline underline-offset-3 decoration-cta-100 decoration-2">Angela Formisano</span> - Fisioterapista
             specializzata in rieducazione posturale e linfodrenaggio
           </h1>
-          <h2 className="uppercase lg:text-7xl tracking-title text-4xl font-bold lg:w-[95%] lg:text-start text-center text-ctext-light text-shadow-ctext text-shadow-md">
+          <h2 className="lg:text-7xl text-4xl font-bold lg:w-[85%] lg:text-start text-center text-ctext-light text-shadow-lg">
             Il tuo punto di riferimento per la riabilitazione ad{' '}
-            <span className="text-primary-100 font-text">Ercolano</span>
+            <span className="text-primary-100">Ercolano</span>
           </h2>
           <div className="flex lg:flex-row flex-col gap-6">
             <Link
@@ -33,9 +33,9 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div className="bg-cta-100/25 rounded-full overflow-hidden border-2 border-cta-100 shadow-lg lg:mt-0 mt-42">
-          <div className="w-[100px] h-[100px] bg-cta-100/75 absolute top-[200px] right-[650px] rounded-full lg:block hidden"></div>
-          <div className="w-[200px] h-[200px] bg-cta-100/50 absolute top-[600px] right-[700px] rounded-full lg:block hidden"></div>
+        <div className="bg-primary-100/25 rounded-full overflow-hidden border-2 border-primary-100 shadow-lg lg:mt-0 mt-42">
+          <div className="w-[100px] h-[100px] bg-primary-100/75 absolute top-[200px] right-[650px] rounded-full lg:block hidden"></div>
+          <div className="w-[200px] h-[200px] bg-primary-100/50 absolute top-[600px] right-[700px] rounded-full lg:block hidden"></div>
           <Image
             src="/images/fisioterapista.png"
             alt="Hero Image"

@@ -10,11 +10,11 @@ export default function Reviews() {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   return (
-    <section className="bg-secondary-light flex md:flex-row flex-col py-16 px-[10%] text-ctext">
+    <section className="bg-secondary-light flex md:flex-row flex-col py-16 px-[10%]">
       <div className="flex flex-col items-start lg:w-[50%] md:w-[60%] w-full md:pr-16 pr-0 md:gap-16 gap-8 md:pb-0 pb-8">
-        <div className="flex flex-col gap-6 md:items-start items-center">
-          <h5 className="text-5xl text-shadow-ctext text-shadow-xs md:text-start text-center">
-            Cosa dicono i miei pazienti dei miei trattamenti
+        <div className="flex flex-col gap-3 md:items-start items-center">
+          <h5 className="text-5xl text-shadow-xs md:text-start text-center text-primary-900 font-bold">
+            Cosa ne pensano i miei pazienti
           </h5>
           <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
         </div>
@@ -41,7 +41,7 @@ export default function Reviews() {
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="embla__slide flex flex-col bg-radial from-secondary-light to-cta-100/10 p-6 flex-none lg:basis-1/3 basis-full rounded-2xl border-1 border-cta-100 shadow-secondary/50 shadow-xs">
+                className="embla__slide flex flex-col bg-radial from-secondary-light to-primary-100/10 p-6 flex-none lg:basis-1/3 basis-full rounded-2xl border-1 border-primary-100">
                 <div className="embla__slide__number h-[300px] gap-2">
                   <h3 className="text-3xl font-bold">{review.autore}</h3>
                   <div className="flex flex-col justify-start gap-6">

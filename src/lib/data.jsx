@@ -1,8 +1,8 @@
 export const trattamenti = [
-  'Posturologia',
-  'Rieducazione motoria',
-  'Terapia manuale',
-  'Terapia strumentale',
+  'Rieducazione Posturale',
+  'Laserterapia',
+  'Tecarterapia',
+  'Terapia Onde Elettriche',
   'Massoterapia',
 ];
 
@@ -132,5 +132,40 @@ export const timelineItems = [
     title: 'Laurea in Fisioterapia',
     dsc: 'Laureata in Fisioterapia alla Federico II di Napoli a pieni voti con la tesi su questa cosa specifica ecc',
     year: 'In corso',
+  },
+];
+
+export const patologieLaserterapia = [
+  'Tendinite',
+  'Borsite',
+  'Epicondilite/Epitrocleite',
+  'Artrosi',
+  'Distorsioni',
+  'Contusioni',
+  'Contratture',
+  'Strappi/Stiramenti',
+  'Dolori cervicali/lombalgie',
+];
+
+export const laserterapiaFaq = [
+  {
+    question: 'La laserterapia fa male? Ci sono effetti collaterali?',
+    answer:
+      'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/><strong>La laserterapia non comporta rischi</strong> significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
+  },
+  {
+    question: 'Come si svolge una seduta di Laserterapia?',
+    answer:
+      "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br /> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
+  },
+  {
+    question: 'Quante sedute sono necessarie per vedere i risultati?',
+    answer:
+      "Il numero di sedute varia in base al tipo di problema e alla sua gravità. In genere, per le condizioni acute possono essere sufficienti 5–10 sedute, mentre per disturbi cronici può essere necessario un ciclo più lungo. Molti pazienti riferiscono un miglioramento già dopo le prime applicazioni, soprattutto in termini di riduzione del dolore e dell'infiammazione.",
+  },
+  {
+    question: 'Ci sono controindicazioni o rischi?',
+    answer:
+      'Sì, ci sono alcune situazioni in cui la laserterapia non è consigliata o deve essere usata con cautela come esempio in presenza di tumori attivi, gravidanze, dispositivi elettronici (come pacemaker), o pelle fotosensibilizzata.',
   },
 ];

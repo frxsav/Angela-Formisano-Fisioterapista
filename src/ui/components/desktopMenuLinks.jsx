@@ -10,7 +10,7 @@ export default function DesktopMenuLinks(props) {
           : 'hidden lg:block'
       }`}>
       <div
-        className={`flex flex-${props.flexDirection} lg:space-x-4 text-ctext lg:items-start items-center lg:pb-0`}>
+        className={`flex flex-${props.flexDirection} lg:gap-4 text-ctext lg:items-start items-center lg:pb-0`}>
         <p
           className={`font-bold pb-3 text-2xl ${
             props.fromFooter ? 'block text-secondary-light' : 'hidden'

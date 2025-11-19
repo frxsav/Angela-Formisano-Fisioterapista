@@ -7,13 +7,15 @@ import { Parallax } from 'react-scroll-parallax';
 
 export default function AboutSection() {
   return (
-    <section className="bg-linear-to-b from-primary-900/20 to-secondary-light text-ctext pt-48 pb-16">
+    <section className="bg-linear-to-b from-primary-900/20 to-secondary-light pt-48 pb-16">
       <div className="lg:grid lg:grid-cols-12 flex flex-col w-[80%] m-auto">
         <div className="flex flex-col lg:col-span-6 md:pt-32 pt-16 pb-32 relative gap-6 lg:items-start items-center">
-          <h3 className="text-5xl font-bold tracking-title font-title uppercase w-[75%] lg:text-start text-center">
-            La mia Formazione ed Esperienza
-          </h3>
-          <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+          <div>
+            <h3 className="text-5xl font-bold tracking-title font-title uppercase lg:text-start text-center text-primary-900">
+              Formazione ed Esperienza
+            </h3>
+            <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+          </div>
           <p className="text-xl text-ctext/90 font-text leading-text w-[75%] lg:text-start text-center">
             Mi sono laureata nel 2018 in <strong>Fisioterapia</strong> alla
             Federico II di Napoli, conseguendo successivamente{' '}

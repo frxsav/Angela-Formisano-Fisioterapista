@@ -8,7 +8,7 @@ export default function ServicesLinks() {
       {trattamenti.map((item, index) => (
         <Link
           key={index}
-          href={'#' + item}
+          href={'/' + item.replaceAll(' ', '-').toLowerCase()}
           className="text-secondary-light hover:underline underline-offset-4 py-1 rounded-md font-medium">
           {item}
         </Link>

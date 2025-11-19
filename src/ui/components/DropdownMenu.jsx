@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { HiChevronDown } from 'react-icons/hi';
 import { trattamenti } from '@/lib/data';
+import { createPortal } from 'react-dom';
 
 export default function DropdownMenu(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,20 +21,27 @@ export default function DropdownMenu(props) {
             ${isOpen ? 'text-primary-300' : ''}`}>
           Trattamenti <HiChevronDown />
         </button>
-        {isOpen && (
-          <div className="absolute z-50 pt-5 left-0 top-10">
-            <div className="flex flex-col text-center rounded-b-3xl bg-secondary-light/95 border-t">
-              {trattamenti.map((item) => (
-                <Link
-                  key={item}
-                  className="py-2 border-b border-primary-900/20 last:border-0 hover:text-primary-300"
-                  href={'#' + item}>
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
+        {isOpen &&
+          // createPortal fa si che il suo contenuto non risulti come figlio di nessuno,
+          // così facendo ho potuto mettere backdrop-blur anche qui 
+          // siccome un figlio di un div con backdrop-blur non può averlo a sua volta
+          createPortal(
+            <div
+              id="dropdown-content"
+              className="fixed z-50 pt-5 self-center left-[45%] top-23">
+              <div className="flex flex-col text-center rounded-b-3xl bg-secondary-light/70 border-t backdrop-blur-sm px-3">
+                {trattamenti.map((item) => (
+                  <Link
+                    key={item}
+                    className="py-2 border-b border-primary-900/20 last:border-0 hover:text-primary-300 text-sm text-ctext"
+                    href={'/' + item.replaceAll(' ', '-').toLowerCase()}>
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            </div>,
+            document.body
+          )}
       </div>
     </>
   );

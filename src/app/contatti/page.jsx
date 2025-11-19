@@ -1,7 +1,7 @@
 'use client';
 
 import { HiPhone, HiMail, HiLocationMarker } from 'react-icons/hi';
-import { ContactForm, Map } from '@/ui';
+import { ContactForm, Map, Socials } from '@/ui';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 export default function Contact() {
@@ -16,13 +16,17 @@ export default function Contact() {
           </h4>
         </div>
         <div className="w-full self-center bg-secondary-light relative z-20 py-16 flex justify-center text-ctext">
-          <div className="flex md:flex-row flex-col bg-radial to-primary-900/10 from-secondary-light shadow-lg gap-16 w-[90%] p-8">
+          <div className="flex md:flex-row flex-col bg-radial to-primary-900/5 from-secondary-light shadow-lg gap-16 w-[80%] p-8 rounded-3xl">
             <div className="flex flex-col gap-12 md:w-[50%] w-full">
               <div>
                 <h3 className="text-4xl font-semibold font-title text-ctext">
-                  Richiedi Informazioni
+                  Richiedi un appuntamento
                 </h3>
                 <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+                <p className="text-2xl font-text pt-4 w-[90%]">
+                  Compila il modulo per descrivere il tuo problema. Ti
+                  ricontatterò al più presto per fissare una visita.
+                </p>
               </div>
               <div className="flex flex-col gap-3">
                 <p className="flex gap-3 md:text-2xl text-xl font-text text-ctext/90 items-center">
@@ -50,6 +54,7 @@ export default function Contact() {
                     Sabato e Domenica <strong>Chiuso</strong>
                   </li>
                 </ul>
+                <Socials />
               </div>
             </div>
             <ContactForm />
