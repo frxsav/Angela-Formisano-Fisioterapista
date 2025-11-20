@@ -10,7 +10,7 @@ export default function AboutSection() {
     <section className="bg-linear-to-b from-primary-900/20 to-secondary-light pt-48 pb-16">
       <div className="lg:grid lg:grid-cols-12 flex flex-col w-[80%] m-auto">
         <div className="flex flex-col lg:col-span-6 md:pt-32 pt-16 pb-32 relative gap-6 lg:items-start items-center">
-          <div>
+          <div className='flex flex-col items-center'>
             <h3 className="text-5xl font-bold tracking-title font-title uppercase lg:text-start text-center text-primary-900">
               Formazione ed Esperienza
             </h3>

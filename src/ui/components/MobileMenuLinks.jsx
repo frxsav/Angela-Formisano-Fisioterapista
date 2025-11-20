@@ -1,8 +1,18 @@
+'use client';
+
 import Link from 'next/link';
+import { createPortal } from 'react-dom';
+import { AccordionItem } from '.';
+import { useState } from 'react';
 
 export default function MobileMenuLinks(props) {
-  return (
-    <div className="lg:hidden flex justify-center bg-secondary-light/90 backdrop-blur-sm absolute top-[80px] w-[80%] left-[10%] rounded-b-3xl duration-300 border-b-1 border-r-1 border-l-1 border-secondary/30">
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+    props.setIsMenuOpen(!isOpen);
+  };
+  return createPortal(
+    <div className="lg:hidden flex justify-center bg-secondary-light/70 backdrop-blur-sm fixed top-[110px] w-[60%] left-[20%] rounded-b-3xl duration-300 border-b-1 border-r-1 border-l-1 border-secondary/30 z-50">
       <div className="flex flex-col pt-2 pb-3 gap-3 w-full">
         <Link
           href="/"
@@ -14,21 +24,28 @@ export default function MobileMenuLinks(props) {
           href="/chi-sono"
           className="text-secondary hover:bg-secondary-100 block px-3 py-2 font-medium transition-colors border-b-1 border-secondary/10 w-[80%] self-center text-center"
           onClick={() => props.setIsMenuOpen(false)}>
-          About
+          Chi Sono
         </Link>
-        <Link
-          href="/servizi"
-          className="text-secondary hover:bg-secondary-100 block px-3 py-2 font-medium transition-colors border-b-1 border-secondary/10 w-[80%] self-center text-center"
+        {/* <Link
+          href="/"
+          className="text-secondary hover:bg-secondary-100 px-3 py-2 font-medium transition-colors border-b-1 border-secondary/10 w-[80%] self-center text-center flex items-center justify-center"
           onClick={() => props.setIsMenuOpen(false)}>
-          Services
-        </Link>
+          Trattamenti <HiChevronDown />
+        </Link> */}
+        <AccordionItem
+          isOpen={isOpen}
+          menu={true}
+          question="Trattamenti"
+          toggle={() => toggle()}
+        />
         <Link
           href="/contatti"
           className="text-secondary hover:bg-secondary-100 block px-3 py-2 rounded-md font-medium transition-colors text-center"
           onClick={() => propssetIsMenuOpen(false)}>
-          Contact
+          Contatti
         </Link>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

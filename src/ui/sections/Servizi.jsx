@@ -20,19 +20,19 @@ export default function ServiziSection() {
         <ul className="flex lg:flex-row flex-col pt-12 gap-18 text-xl font-text items-center justify-center">
           <li className="flex lg:flex-row flex-col items-center gap-2">
             <GiArmBandage className="text-primary-300 text-4xl" />
-            <span>Ritrovare il benessere</span>
+            <span className='text-center'>Ritrovare il benessere</span>
           </li>
           <li className="flex lg:flex-row flex-col items-center gap-2">
             <GiStickingPlaster className="text-primary-300 text-4xl" />
-            <span>Recuperare da un infortunio</span>
+            <span className='text-center'>Recuperare da un infortunio</span>
           </li>
           <li className="flex lg:flex-row flex-col items-center gap-2">
             <GiBiceps className="text-primary-300 text-4xl" />
-            <span>Prevenire problemi muscoloscheletrici</span>
+            <span className='text-center'>Prevenire problemi muscoloscheletrici</span>
           </li>
           <li className="flex lg:flex-row flex-col items-center gap-2">
             <GiHealthNormal className="text-primary-300 text-4xl" />
-            <span>migliorare la tua qualità di vita</span>
+            <span className='text-center'>migliorare la tua qualità di vita</span>
           </li>
         </ul>
         <Carousel />
