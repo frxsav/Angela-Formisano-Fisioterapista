@@ -39,7 +39,7 @@ export default function AboutSection() {
             <Image
               src="/images/fisio1.webp"
               alt="Fisio 1"
-              width={600}
+              width={400}
               height={600}
               className="rounded-[100px]"
             />
@@ -48,7 +48,7 @@ export default function AboutSection() {
             <Image
               src="/images/fisio2.webp"
               alt="Fisio 2"
-              width={600}
+              width={400}
               height={600}
               className="rounded-[100px]"
             />

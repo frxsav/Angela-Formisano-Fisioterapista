@@ -39,8 +39,9 @@ export default function Hero() {
           <Image
             src="/images/fisioterapista.png"
             alt="Hero Image"
-            width={500}
-            height={500}
+            priority
+            width={433}
+            height={433}
           />
         </div>
       </div>

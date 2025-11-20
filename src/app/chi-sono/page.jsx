@@ -12,8 +12,8 @@ export default function About() {
             <Image
               src="/images/fisioterapista.png"
               alt="Angela Formisano | Fisioterapista"
-              width={600}
-              height={600}
+              width={433}
+              height={433}
               className="rounded-full bg-primary-300/25"
             />
             <div className="flex flex-col gap-3 lg:items-start lg:max-w-[60%] lg:pr-32 items-center lg:px-0 px-4">
