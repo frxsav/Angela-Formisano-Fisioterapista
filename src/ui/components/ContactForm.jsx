@@ -81,7 +81,7 @@ export default function ContactForm() {
           name="nome"
           value={formData.nome}
           onChange={handleChange}
-          className="col-span-6 bg-white p-4 rounded-xl"
+          className="md:col-span-6 col-span-12 bg-white p-4 rounded-xl"
           placeholder="Nome *"
         />
         <input
@@ -91,7 +91,7 @@ export default function ContactForm() {
           name="cognome"
           value={formData.cognome}
           onChange={handleChange}
-          className="col-span-6 bg-white p-4 rounded-xl"
+          className="md:col-span-6 col-span-12 bg-white p-4 rounded-xl"
           placeholder="Cognome *"
         />
       </div>
@@ -103,7 +103,7 @@ export default function ContactForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="col-span-6 bg-white p-4 rounded-xl"
+          className="md:col-span-6 col-span-12 bg-white p-4 rounded-xl"
           placeholder="Email *"
         />
         <input
@@ -113,7 +113,7 @@ export default function ContactForm() {
           name="telefono"
           value={formData.telefono}
           onChange={handleChange}
-          className="col-span-6 bg-white p-4 rounded-xl"
+          className="md:col-span-6 col-span-12 bg-white p-4 rounded-xl"
           placeholder="Telefono *"
         />
       </div>
@@ -158,7 +158,7 @@ export default function ContactForm() {
       </div>
       <button
         type="submit"
-        className="w-[25%] tracking-cta text-xl font-semibold bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-xl shadow-lg">
+        className="md:w-[30%] tracking-cta text-xl font-semibold bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-xl shadow-lg">
         Invia
       </button>
     </form>

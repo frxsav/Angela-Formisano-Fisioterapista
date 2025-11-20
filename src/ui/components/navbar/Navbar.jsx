@@ -20,7 +20,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="z-40 bg-secondary-light/70 backdrop-blur-sm flex justify-between items-center h-16 mx-auto rounded-full w-[80%] fixed top-0 justify-self-center py-10 px-6 mt-8 shadow-lg">
+    <nav className="z-40 bg-secondary-light/70 backdrop-blur-sm flex justify-between items-center h-16 rounded-full w-[80%] fixed top-0 left-1/2 -translate-x-1/2 py-10 px-6 mt-8 shadow-lg">
       {/* Logo */}
       <Logo />
       {/* Desktop Menu */}

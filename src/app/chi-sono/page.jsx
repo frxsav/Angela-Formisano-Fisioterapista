@@ -16,7 +16,7 @@ export default function About() {
               height={600}
               className="rounded-full bg-primary-300/25"
             />
-            <div className="flex flex-col gap-3 lg:items-start lg:max-w-[60%] lg:pr-32 items-center lg:px-0 px-8">
+            <div className="flex flex-col gap-3 lg:items-start lg:max-w-[60%] lg:pr-32 items-center lg:px-0 px-4">
               <h3 className="md:text-6xl text-5xl font-bold text-primary-900 text-shadow-ctext text-shadow-xs lg:text-start text-center">
                 Angela Formisano
               </h3>
@@ -42,7 +42,7 @@ export default function About() {
             </div>
           </div>
           <div className="flex flex-col gap-3 items-center w-[90%] self-center py-8 border-t-1 border-secondary/20">
-            <h3 className="md:text-5xl text-3xl font-bold text-primary-900 text-shadow-ctext text-shadow-xs">
+            <h3 className="md:text-5xl text-3xl font-bold text-primary-900 text-shadow-ctext text-shadow-xs lg:text-start text-center">
               Percorso di studi ed approccio
             </h3>
             <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>

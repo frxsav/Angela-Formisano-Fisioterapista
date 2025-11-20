@@ -11,7 +11,7 @@ export default function TreatmentBody(props) {
           className="lg:text-3xl text-2xl font-bold lg:text-start text-center font-title text-ctext text-shadow-xs"
           dangerouslySetInnerHTML={{ __html: props.therapy.subtitle }}></h2>
         <p
-          className="font-text text-ctext/90 text-2xl"
+          className="font-text text-ctext/90 md:text-2xl text-xl md:pt-0 pt-8"
           dangerouslySetInnerHTML={{ __html: props.therapy.dsc }}></p>
         <ul className="grid grid-cols-12 gap-3 list-disc pl-6 text-ctext text-xl font-text">
           {props.therapy.list.map((item, index) => (

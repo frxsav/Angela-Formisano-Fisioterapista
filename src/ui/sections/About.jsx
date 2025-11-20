@@ -16,7 +16,7 @@ export default function AboutSection() {
             </h3>
             <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
           </div>
-          <p className="text-xl text-ctext/90 font-text leading-text w-[75%] lg:text-start text-center">
+          <p className="text-xl text-ctext/90 font-text leading-text lg:w-[75%] w-[90%] lg:text-start text-center">
             Mi sono laureata nel 2018 in <strong>Fisioterapia</strong> alla
             Federico II di Napoli, conseguendo successivamente{' '}
             <strong>Master in Posturologia</strong> e in qualcos'altro.

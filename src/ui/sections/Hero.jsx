@@ -12,11 +12,11 @@ export default function Hero() {
       className="bg-[url('/images/trattamento-riabilitazione-posturale.webp')] bg-no-repeat bg-cover bg-center">
       <div className="font-title min-h-[90vh] px-[10%] items-center justify-center flex lg:flex-row flex-col bg-primary-900/75 lg:pt-32 lg:gap-0 gap-6">
         <div className="flex flex-col gap-3 lg:w-[70%] items-center lg:items-start lg:order-first order-last">
-          <h1 className="text-lg font-bold lg:text-start text-center text-ctext-light tracking-wide uppercase text-shadow-sm font-text w-[75%]">
+          <h1 className="lg:text-lg text-md font-bold lg:text-start text-center text-ctext-light lg:tracking-wide tracking-normal uppercase text-shadow-sm font-text w-[75%]">
             <span className="underline underline-offset-3 decoration-cta-100 decoration-2">Angela Formisano</span> - Fisioterapista
             specializzata in rieducazione posturale e linfodrenaggio
           </h1>
-          <h2 className="lg:text-7xl text-4xl font-bold lg:w-[85%] lg:text-start text-center text-ctext-light text-shadow-lg">
+          <h2 className="lg:text-7xl text-5xl font-bold lg:w-[85%] lg:text-start text-center text-ctext-light text-shadow-lg lg:tracking-normal tracking-title">
             Il tuo punto di riferimento per la riabilitazione ad{' '}
             <span className="text-primary-100">Ercolano</span>
           </h2>
