@@ -1,7 +1,7 @@
 'use client';
 
 import { HiPhone, HiMail, HiLocationMarker } from 'react-icons/hi';
-import { ContactForm, Map, Socials } from '@/ui';
+import { ContactForm, Map, Socials, MiniHero } from '@/ui';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 export default function Contact() {
@@ -9,12 +9,7 @@ export default function Contact() {
     <GoogleReCaptchaProvider
       reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
       <section className="flex flex-col font-title">
-        <div className="min-h-[60vh] w-full bg-[url('/images/trattamento-riabilitazione-posturale.webp')] bg-no-repeat bg-cover bg-center z-10 relative">
-          <div className="absolute top-0 w-full h-full bg-primary-900/50"></div>
-          <h4 className="absolute bottom-0 lg:left-[10%] left-0 text-6xl text-shadow-ctext text-shadow-md text-secondary-light font-semibold pb-2 italic">
-            Contatti
-          </h4>
-        </div>
+        <MiniHero title="Contatti" />
         <div className="w-full self-center bg-secondary-light relative z-20 py-16 flex justify-center text-ctext">
           <div className="flex md:flex-row flex-col bg-radial to-primary-900/5 from-secondary-light shadow-lg gap-16 w-[80%] p-8 rounded-3xl">
             <div className="flex flex-col gap-12 md:w-[50%] w-full">

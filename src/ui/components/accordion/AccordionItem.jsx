@@ -15,7 +15,7 @@ export default function AccordionItem(props) {
         <HiOutlineMinus
           className={`text-2xl ${props.isOpen ? 'block' : 'hidden'}`}
         />
-        <h2 className="text-2xl font-bold font-title">{props.question}</h2>
+        <h2 className="lg:text-2xl text-xl font-bold font-title lg:pr-0 pr-6">{props.question}</h2>
       </div>
       <Collapse isOpened={props.isOpen}>
         <p

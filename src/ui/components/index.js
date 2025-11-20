@@ -1,5 +1,6 @@
 export * from './navbar';
 export * from './footer';
+export * from './treatments';
 export { default as Logo } from './Logo';
 export { default as DesktopMenuLinks } from './DesktopMenuLinks';
 export { default as MobileMenuLinks } from './MobileMenuLinks';
@@ -10,3 +11,4 @@ export { default as AccordionItem } from './accordion/AccordionItem';
 export { default as Timeline } from './Timeline';
 export { default as ContactForm } from './ContactForm';
 export { default as Map } from './Map';
+export { default as MiniHero } from './MiniHero';

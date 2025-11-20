@@ -5,12 +5,14 @@ export default function DesktopMenuLinks(props) {
   return (
     <div
       className={`${
-        props.fromFooter
-          ? 'lg:col-span-3 col-span-12'
-          : 'hidden lg:block'
+        props.fromFooter ? 'lg:col-span-3 col-span-12' : 'hidden lg:block'
       }`}>
       <div
-        className={`flex flex-${props.flexDirection} lg:gap-4 text-ctext lg:items-start items-center lg:pb-0`}>
+        className={`flex flex-${
+          props.flexDirection
+        } text-ctext lg:items-start items-center lg:pb-0 ${
+          props.fromFooter ? '' : 'lg:gap-4'
+        }`}>
         <p
           className={`font-bold pb-3 text-2xl ${
             props.fromFooter ? 'block text-secondary-light' : 'hidden'
