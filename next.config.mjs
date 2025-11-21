@@ -13,7 +13,6 @@ const securityHeaders = [
       form-action 'self';
       frame-ancestors 'none';
       upgrade-insecure-requests;
-      require-trusted-types-for 'script';
     `
       .replace(/\s{2,}/g, ' ')
       .trim(),

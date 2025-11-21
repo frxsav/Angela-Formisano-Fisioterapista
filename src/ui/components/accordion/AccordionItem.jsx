@@ -6,6 +6,11 @@ import Link from 'next/link';
 import { trattamenti } from '@/lib/data';
 
 export default function AccordionItem(props) {
+  const answersArray = [];
+  props.answer.split('<br/>').forEach((element) => {
+    answersArray.push(element);
+  });
+
   return (
     <div
       className={`${
@@ -38,14 +43,27 @@ export default function AccordionItem(props) {
         Trattamenti <HiChevronDown />
       </button>
       <Collapse isOpened={props.isOpen}>
-        <p
-          dangerouslySetInnerHTML={{ __html: props.answer }}
+        {answersArray.map((item, index) => (
+          <p
+            // dangerouslySetInnerHTML={{ __html: a }}
+            key={index}
+            className={`${
+              props.menu
+                ? 'hidden'
+                : 'text-xl font-text leading-text first:pt-8 w-[90%] text-ctext/90'
+            }`}>
+            {item}
+          </p>
+        ))}
+        {/* <p
+          // dangerouslySetInnerHTML={{ __html: a }}
           className={`${
             props.menu
               ? 'hidden'
               : 'text-xl font-text leading-text pt-8 w-[90%] text-ctext/90'
-          }`}
-        />
+          }`}>
+          {a}
+        </p> */}
         <div
           className={`${
             props.menu

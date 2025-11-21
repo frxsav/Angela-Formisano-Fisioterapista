@@ -152,12 +152,12 @@ export const therapies = {
       {
         question: 'La laserterapia fa male? Ci sono effetti collaterali?',
         answer:
-          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/><strong>La laserterapia non comporta rischi</strong> significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
+          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/>La laserterapia non comporta rischi significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
       },
       {
         question: 'Come si svolge una seduta di Laserterapia?',
         answer:
-          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br /> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
+          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br/> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
       },
       {
         question: 'Quante sedute sono necessarie per vedere i risultati?',
@@ -171,10 +171,10 @@ export const therapies = {
       },
     ],
     title:
-      'Laserterapia ad Ercolano: <br />La tecnologia che riduce il dolore e accelera il recupero',
+      'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
     subtitle:
       'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-    dsc: "La <strong>laserterapia</strong> è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di <strong>disturbi muscolari, articolari o tendinei.</strong> <br /> <br />Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle <strong>infiammazioni acute</strong> ai <strong>fastidi cronici.</strong> Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+    dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
     img: '/images/terapia.webp',
   },
   rieducazionePosturale: {
@@ -193,12 +193,12 @@ export const therapies = {
       {
         question: 'La laserterapia fa male? Ci sono effetti collaterali?',
         answer:
-          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/><strong>La laserterapia non comporta rischi</strong> significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
+          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/>La laserterapia non comporta rischi significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
       },
       {
         question: 'Come si svolge una seduta di Laserterapia?',
         answer:
-          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br /> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
+          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br/> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
       },
       {
         question: 'Quante sedute sono necessarie per vedere i risultati?',
@@ -212,10 +212,10 @@ export const therapies = {
       },
     ],
     title:
-      'Laserterapia ad Ercolano: <br />La tecnologia che riduce il dolore e accelera il recupero',
+      'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
     subtitle:
       'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-    dsc: "La <strong>laserterapia</strong> è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di <strong>disturbi muscolari, articolari o tendinei.</strong> <br /> <br />Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle <strong>infiammazioni acute</strong> ai <strong>fastidi cronici.</strong> Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+    dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
     img: '/images/terapia.webp',
   },
   massoterapia: {
@@ -234,12 +234,12 @@ export const therapies = {
       {
         question: 'La laserterapia fa male? Ci sono effetti collaterali?',
         answer:
-          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/><strong>La laserterapia non comporta rischi</strong> significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
+          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/>La laserterapia non comporta rischi significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
       },
       {
         question: 'Come si svolge una seduta di Laserterapia?',
         answer:
-          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br /> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
+          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br/> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
       },
       {
         question: 'Quante sedute sono necessarie per vedere i risultati?',
@@ -253,10 +253,10 @@ export const therapies = {
       },
     ],
     title:
-      'Laserterapia ad Ercolano: <br />La tecnologia che riduce il dolore e accelera il recupero',
+      'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
     subtitle:
       'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-    dsc: "La <strong>laserterapia</strong> è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di <strong>disturbi muscolari, articolari o tendinei.</strong> <br /> <br />Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle <strong>infiammazioni acute</strong> ai <strong>fastidi cronici.</strong> Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+    dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
     img: '/images/terapia.webp',
   },
   tecarterapia: {
@@ -275,12 +275,12 @@ export const therapies = {
       {
         question: 'La laserterapia fa male? Ci sono effetti collaterali?',
         answer:
-          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/><strong>La laserterapia non comporta rischi</strong> significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
+          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/>La laserterapia non comporta rischi significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
       },
       {
         question: 'Come si svolge una seduta di Laserterapia?',
         answer:
-          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br /> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
+          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br/> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
       },
       {
         question: 'Quante sedute sono necessarie per vedere i risultati?',
@@ -294,10 +294,10 @@ export const therapies = {
       },
     ],
     title:
-      'Laserterapia ad Ercolano: <br />La tecnologia che riduce il dolore e accelera il recupero',
+      'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
     subtitle:
       'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-    dsc: "La <strong>laserterapia</strong> è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di <strong>disturbi muscolari, articolari o tendinei.</strong> <br /> <br />Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle <strong>infiammazioni acute</strong> ai <strong>fastidi cronici.</strong> Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+    dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
     img: '/images/terapia.webp',
   },
   terapiaOndeElettriche: {
@@ -316,12 +316,12 @@ export const therapies = {
       {
         question: 'La laserterapia fa male? Ci sono effetti collaterali?',
         answer:
-          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/><strong>La laserterapia non comporta rischi</strong> significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
+          'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/>La laserterapia non comporta rischi significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
       },
       {
         question: 'Come si svolge una seduta di Laserterapia?',
         answer:
-          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br /> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
+          "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br/> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
       },
       {
         question: 'Quante sedute sono necessarie per vedere i risultati?',
@@ -335,10 +335,10 @@ export const therapies = {
       },
     ],
     title:
-      'Laserterapia ad Ercolano: <br />La tecnologia che riduce il dolore e accelera il recupero',
+      'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
     subtitle:
       'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-    dsc: "La <strong>laserterapia</strong> è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di <strong>disturbi muscolari, articolari o tendinei.</strong> <br /> <br />Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle <strong>infiammazioni acute</strong> ai <strong>fastidi cronici.</strong> Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+    dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
     img: '/images/terapia.webp',
   },
 };
@@ -359,12 +359,12 @@ export const laserterapia = {
     {
       question: 'La laserterapia fa male? Ci sono effetti collaterali?',
       answer:
-        'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/><strong>La laserterapia non comporta rischi</strong> significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
+        'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/>La laserterapia non comporta rischi significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
     },
     {
       question: 'Come si svolge una seduta di Laserterapia?',
       answer:
-        "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br /> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
+        "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br/> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
     },
     {
       question: 'Quante sedute sono necessarie per vedere i risultati?',
@@ -378,8 +378,8 @@ export const laserterapia = {
     },
   ],
   title:
-    'Laserterapia ad Ercolano: <br />La tecnologia che riduce il dolore e accelera il recupero',
+    'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
   subtitle: 'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-  dsc: "La <strong>laserterapia</strong> è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di <strong>disturbi muscolari, articolari o tendinei.</strong> <br /> <br />Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle <strong>infiammazioni acute</strong> ai <strong>fastidi cronici.</strong> Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+  dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
   img: '/images/terapia.webp',
 };

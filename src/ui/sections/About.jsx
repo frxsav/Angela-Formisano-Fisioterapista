@@ -20,8 +20,8 @@ export default function AboutSection() {
             Mi sono laureata nel 2018 in <strong>Fisioterapia</strong> alla
             Federico II di Napoli, conseguendo successivamente{' '}
             <strong>Master in Posturologia</strong> e in qualcos'altro.
-            <br />
-            <br />
+            <br/>
+            <br/>
             Da allora non ho mai smesso di informarmi e formarmi seguendo corsi
             di formazione per tecnologie innovative e metodi all'avanguardia
             specializzandomi in <strong>Linfodrenaggio</strong> e{' '}

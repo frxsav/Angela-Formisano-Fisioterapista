@@ -153,7 +153,7 @@ export default function ContactForm() {
             Termini e Condizioni della Privacy
           </Link>{' '}
           *
-          <br />
+          <br/>
         </label>
       </div>
       <button
