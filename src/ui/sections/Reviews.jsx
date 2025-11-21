@@ -67,7 +67,7 @@ export default function Reviews() {
           Prenota una visita
         </Link>
         <Link
-          className="group flex flex-row items-center tracking-cta text-xl justify-center bg-secondary-light border-1 border-cta-100 hover:bg-secondary-light-hover transition-colors duration-300 text-cta-100 p-4 rounded-full shadow-lg gap-2"
+          className="group flex flex-row items-center tracking-cta text-xl justify-center bg-secondary-light border-1 border-primary-900 hover:bg-secondary-light-hover transition-colors duration-300 text-primary-900 p-4 rounded-full shadow-lg gap-2"
           href="/contatti">
           +39 3394211017
           <HiPhone className="text-xl group-hover:animate-shake" />
