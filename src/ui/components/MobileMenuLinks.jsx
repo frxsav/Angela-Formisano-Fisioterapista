@@ -26,12 +26,6 @@ export default function MobileMenuLinks(props) {
           onClick={() => props.setIsMenuOpen(false)}>
           Chi Sono
         </Link>
-        {/* <Link
-          href="/"
-          className="text-secondary hover:bg-secondary-100 px-3 py-2 font-medium transition-colors border-b-1 border-secondary/10 w-[80%] self-center text-center flex items-center justify-center"
-          onClick={() => props.setIsMenuOpen(false)}>
-          Trattamenti <HiChevronDown />
-        </Link> */}
         <AccordionItem
           isOpen={isOpen}
           menu={true}

@@ -10,7 +10,7 @@ export default function Hero() {
     <section
       id="hero-section"
       className="bg-[url('/images/trattamento-riabilitazione-posturale.webp')] bg-no-repeat bg-cover bg-center">
-      <div className="font-title min-h-[90vh] px-[10%] items-center justify-center flex lg:flex-row flex-col bg-primary-900/75 lg:pt-32 lg:gap-0 gap-6">
+      <div className="font-title min-h-[90vh] px-[10%] items-center justify-center flex lg:flex-row flex-col bg-primary-900/70 lg:pt-32 lg:gap-0 gap-6">
         <div className="flex flex-col gap-3 lg:w-[70%] items-center lg:items-start lg:order-first order-last">
           <h1 className="lg:text-lg text-md font-bold lg:text-start text-center text-ctext-light lg:tracking-wide tracking-normal uppercase text-shadow-sm font-text w-[75%]">
             <span className="underline underline-offset-3 decoration-cta-100 decoration-2">Angela Formisano</span> - Fisioterapista
@@ -22,12 +22,12 @@ export default function Hero() {
           </h2>
           <div className="flex lg:flex-row flex-col gap-6">
             <Link
-              className="tracking-cta lg:self-start self-center text-center mt-4 border-1 border-cta-100 bg-cta-100 hover:bg-cta-900 hover:border-cta-900 duration-300 text-ctext-light text-lg p-4 rounded-full shadow-lg"
+              className="tracking-cta lg:self-start self-center text-center mt-4 border-1 border-cta-100 bg-cta-100 hover:bg-secondary-light hover:border-secondary-light duration-300 text-primary-900 text-lg p-4 rounded-full shadow-lg"
               href="#appointment">
               Prenota un appuntamento
             </Link>
             <Link
-              className="tracking-cta lg:self-start self-center text-center mt-4 border-1 border-cta-100 bg-secondary-light hover:bg-secondary-light-hover duration-300 text-cta-100 text-lg p-4 rounded-full shadow-lg"
+              className="tracking-cta lg:self-start self-center text-center mt-4 border-1 border-secondary-light bg-secondary-light hover:bg-secondary-light-hover duration-300 text-primary-900 text-lg p-4 rounded-full shadow-lg"
               href="#appointment">
               Scopri i trattamenti
             </Link>
@@ -40,12 +40,13 @@ export default function Hero() {
             src="/images/fisioterapista.png"
             alt="Hero Image"
             priority
+            fetchPriority="high"
             width={433}
             height={433}
           />
         </div>
       </div>
-      <div className="bg-primary-900/75 flex flex-col">
+      <div className="bg-primary-900/70 flex flex-col">
         <Parallax className="flex flex-col" speed={-5}>
           <div
             className="z-20 lg:w-[80%] w-[90%] bg-secondary-light flex lg:flex-row flex-col self-center relative top-30 rounded-xl lg:py-12 px-6 shadow-2xl"

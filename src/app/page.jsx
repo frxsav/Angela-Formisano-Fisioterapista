@@ -1,6 +1,3 @@
-'use client';
-
-import Head from 'next/head';
 import {
   Hero,
   ServiziSection,
@@ -9,31 +6,35 @@ import {
   Faq,
   ContattiSection,
 } from '@/ui';
-import { useState, useEffect } from 'react';
+
+export const metadata = {
+  title: 'Angela Formisano - Fisioterapista Specializzata | Ercolano, Napoli',
+  description:
+    'Fisioterapia ad Ercolano: rieducazione posturale, massoterapia e trattamenti personalizzati. Tecnologie avanzate per il tuo benessere.',
+  openGraph: {
+    title: 'Fisioterapista ad Ercolano - Angela Formisano',
+    description: 'Trattamenti personalizzati di fisioterapia ad Ercolano',
+    images: ['/images/fisioterapista.png'],
+    locale: 'it_IT',
+    type: 'website',
+  },
+  keywords: [
+    'fisioterapista ercolano',
+    'fisioterapia napoli',
+    'rieducazione posturale',
+    'massoterapia',
+  ],
+};
 
 export default function Home() {
-  const [theme, setTheme] = useState(null);
-  useEffect(() => {
-    const localTheme = localStorage.getItem('theme');
-    setTheme(localTheme);
-  });
   return (
-    <div>
-      <Head>
-        <title>Home</title>
-        <meta name="description" content="Home page description" />
-        <meta property="og:title" content="og title" />
-        <meta property="og:description" content="og description" />
-        <meta property="og:image" content="og-image.jpg" />
-      </Head>
-      <main className="font-title">
-        <Hero />
-        <ServiziSection />
-        <AboutSection />
-        <Reviews />
-        <Faq />
-        <ContattiSection />
-      </main>
-    </div>
+    <main className="font-title">
+      <Hero />
+      <ServiziSection />
+      <AboutSection />
+      <Reviews />
+      <Faq />
+      <ContattiSection />
+    </main>
   );
 }

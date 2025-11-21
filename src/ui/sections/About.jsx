@@ -7,7 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 export default function AboutSection() {
   return (
-    <section className="bg-linear-to-b from-primary-900/20 to-secondary-light pt-48 pb-16">
+    <section className="bg-linear-to-b from-primary-900/15 to-secondary-light pt-48 pb-16">
       <div className="lg:grid lg:grid-cols-12 flex flex-col w-[80%] m-auto">
         <div className="flex flex-col lg:col-span-6 md:pt-32 pt-16 pb-32 relative gap-6 lg:items-start items-center">
           <div className='flex flex-col items-center'>
@@ -28,7 +28,7 @@ export default function AboutSection() {
             <strong>Rieducazione Posturale.</strong>
           </p>
           <Link
-            className="flex md:w-[30%] tracking-cta text-xl justify-center bg-cta-100 hover:bg-cta-900 transition-colors duration-300 text-ctext-light p-3 rounded-full shadow-lg flex-row items-end gap-2"
+            className="flex md:w-[30%] tracking-cta text-xl justify-center bg-cta-100 hover:bg-secondary-light transition-colors duration-300 text-primary-900 p-3 rounded-full shadow-lg flex-row items-end gap-2"
             href="/chi-sono">
             Scopri di più{' '}
             <HiOutlineArrowUturnRight className="text-xl scale-y-[-1]" />

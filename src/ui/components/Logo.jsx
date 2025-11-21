@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Logo() {
   return (
-    <Link href="/" className="flex items-center">
+    <Link href="/" className="flex items-center flex-none" aria-label='Logo'>
       <Image
         src="/images/Logo.png"
         width={60}

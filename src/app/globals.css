@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary-900: oklch(0.2966 0.0901 252.5);
+  --color-primary-900: oklch(0.2637 0.0858 254.66);
   --color-primary-500: oklch(0.4091 0.102087 244.5829);
   --color-primary-300: oklch(0.5237 0.115456 237.6301);
   --color-primary-100: oklch(77.72% 0.1164 237.92);
@@ -10,7 +10,7 @@
   --color-secondary-light: oklch(94.611% 0.00011 271.152);
   --color-secondary-light-100: oklch(98.265% 0.00511 229.665 / 0.1);
   --color-secondary-light-hover: oklch(0.9078 0.00011 271.152);
-  --color-cta-100: oklch(0.699 0.1257 181.35);
+  --color-cta-100: oklch(0.8288 0.150153 180.2228);
   --color-cta-900: oklch(0.5127 0.0882 183.48);
   --color-ctext: oklch(23.116% 0.00193 286.052);
   --color-ctext-light: oklch(94.611% 0.00011 271.152);

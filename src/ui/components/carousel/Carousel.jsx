@@ -42,7 +42,7 @@ const Carousel = (props) => {
                   {servizio.dsc}
                 </span>
                 <Link
-                  className="lg:w-[50%] self-center text-lg tracking-cta bg-cta-100 hover:bg-cta-900 transition-colors duration-500 text-ctext-light p-3 rounded-full shadow-lg text-center"
+                  className="lg:w-[50%] self-center text-lg tracking-cta bg-cta-100 hover:bg-secondary-light transition-colors duration-500 text-primary-900 p-3 rounded-full shadow-lg text-center"
                   href="#appointment">
                   Scopri di più
                 </Link>
