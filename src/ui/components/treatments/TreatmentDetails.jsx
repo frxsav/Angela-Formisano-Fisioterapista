@@ -5,25 +5,23 @@ export default function (props) {
     <section id="trattamenti" className="py-16 relative">
       <div className="px-[10%] flex flex-col gap-16">
         <div className="flex flex-col">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary-900">
-            Le Mie Tecnologie
+          <h2 className="text-3xl font-bold text-primary-900">
+            {props.therapies.title}
           </h2>
           <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
           <p className="text-xl text-ctext/75 max-w-2xl mt-4 font-text">
-            Utilizzo macchinari di ultima generazione per garantire la massima
-            efficacia terapeutica. Ecco nel dettaglio le terapie che offro
-            presso il mio studio di Ercolano.
+            {props.therapies.dsc}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {props.therapies.map((therapy, index) => (
+          {props.therapies.cards.map((therapy, index) => (
             <div
               key={index}
               className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 group h-full flex flex-col">
               <div className="h-56 overflow-hidden relative">
                 <Image
-                  src="/images/terapia.webp"
+                  src={therapy.img}
                   alt={therapy.title + ' Image'}
                   fill
                   className="object-cover transform group-hover:scale-105 transition-transform duration-700"

@@ -7,7 +7,7 @@ export default function About() {
     <section className="flex flex-col font-title">
       <MiniHero title="Chi Sono" />
       <div className="w-full self-center bg-secondary-light relative z-20 py-16 flex justify-center">
-        <div className="flex flex-col bg-radial to-primary-900/10 from-secondary-light shadow-lg gap-16 w-[90%]">
+        <div className="flex flex-col bg-radial to-primary-900/10 from-secondary-light rounded-3xl shadow-lg gap-16 w-[90%]">
           <div className="flex lg:flex-row flex-col px-8 lg:gap-32 gap-16 py-16 rounded-4xl">
             <Image
               src="/images/fisioterapista.png"

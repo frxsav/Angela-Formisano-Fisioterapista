@@ -55,15 +55,6 @@ export default function AccordionItem(props) {
             {item}
           </p>
         ))}
-        {/* <p
-          // dangerouslySetInnerHTML={{ __html: a }}
-          className={`${
-            props.menu
-              ? 'hidden'
-              : 'text-xl font-text leading-text pt-8 w-[90%] text-ctext/90'
-          }`}>
-          {a}
-        </p> */}
         <div
           className={`${
             props.menu

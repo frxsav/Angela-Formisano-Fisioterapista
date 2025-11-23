@@ -9,6 +9,7 @@ export default function MobileMenuLinks(props) {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const toggle = () => {
     setIsAccordionOpen(!isAccordionOpen);
+    props.setIsMenuOpen(!isAccordionOpen);
   };
   return createPortal(
     <div className="lg:hidden flex justify-center bg-secondary-light/70 backdrop-blur-sm fixed top-[110px] w-[60%] left-[20%] rounded-b-3xl duration-300 border-b-1 border-r-1 border-l-1 border-secondary/30 z-40">

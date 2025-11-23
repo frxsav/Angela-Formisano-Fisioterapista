@@ -20,7 +20,7 @@ export default function TerapiaStrumentale() {
   return (
     <section className="flex flex-col font-title">
       <MiniHero title="Terapia Strumentale" />
-      <div className="bg-secondary-light/50 py-32 flex flex-col text-ctext relative">
+      <div className="bg-secondary-light/50 md:py-32 py-16 flex flex-col text-ctext relative">
         {/* Main */}
         <TreatmentBody therapy={therapies.terapiaStrumentale} />
         {/* Patologie */}

@@ -16,17 +16,19 @@ export default function TreatmentBody(props) {
     dscArray.push(element);
   });
   return (
-    <div className="grid grid-cols-12 px-[10%] pb-32 items-start">
-      <div className="flex flex-col lg:gap-8 gap-6 md:col-span-6 col-span-12">
-        <div className="flex w-fit items-center gap-2 px-3 py-1 rounded-full bg-primary-100/20 border border-primary-100/20 text-primary-900 text-sm tracking-wide font-semibold">
+    <div className="grid grid-cols-12 px-[10%] pb-16 items-start">
+      <div className="flex flex-col lg:gap-8 gap-4 md:col-span-6 col-span-12 md:order-1 order-2 md:pt-0 pt-8">
+        <div className="flex w-fit items-center gap-2 px-3 py-1 rounded-full bg-primary-100/20 border border-primary-100/20">
           <span className="w-2 h-2 rounded-full bg-primary-100"></span>
-          <span>Angela Formisano | Fisioterapista specializzata</span>
+          <span className="text-primary-900 md:text-sm text-xs tracking-wide font-semibold">
+            Fisioterapia avanzata ad Ercolano
+          </span>
         </div>
-        <div className="flex flex-col gap-3 lg:items-start items-center">
+        <div className="flex flex-col items-start">
           {titleArray.map((item, index) => (
             <h1
               key={index}
-              className="lg:text-5xl text-4xl lg:text-start text-center font-title font-bold text-primary-900 text-shadow-xs">
+              className="lg:text-5xl text-4xl text-start font-title font-bold text-primary-900 text-shadow-xs">
               {item}
             </h1>
           ))}
@@ -35,7 +37,7 @@ export default function TreatmentBody(props) {
         {subtitleArray.map((item, index) => (
           <h2
             key={index}
-            className="lg:text-3xl text-2xl font-bold lg:text-start text-center font-title text-ctext text-shadow-xs">
+            className="lg:text-3xl text-2xl font-bold text-start font-title text-ctext text-shadow-xs">
             {item}
           </h2>
         ))}
@@ -47,7 +49,7 @@ export default function TreatmentBody(props) {
           </p>
         ))}
       </div>
-      <div className="relative lg:col-span-4 col-span-12 lg:col-end-13">
+      <div className="relative lg:col-span-4 col-span-12 lg:col-end-13 md:order-2 order-1">
         <Image
           src={props.therapy.img}
           alt="Laserterapia"

@@ -11,7 +11,8 @@ const securityHeaders = [
       object-src 'none';
       base-uri 'self';
       form-action 'self';
-      frame-ancestors 'none';
+      frame-ancestors 'self';
+      frame-src 'self' https://www.google.com https://maps.googleapis.com;
       upgrade-insecure-requests;
     `
       .replace(/\s{2,}/g, ' ')
