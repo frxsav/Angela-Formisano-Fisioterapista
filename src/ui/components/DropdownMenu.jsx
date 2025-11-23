@@ -28,8 +28,8 @@ export default function DropdownMenu(props) {
           createPortal(
             <div
               id="dropdown-content"
-              className="fixed z-50 pt-5 self-center left-[45%] top-23">
-              <div className="flex flex-col text-center rounded-b-3xl bg-secondary-light/70 border-t backdrop-blur-sm px-3">
+              className="fixed z-50 pt-5 self-center left-[44%] top-23 w-[200px]">
+              <div className="flex flex-col text-center rounded-b-3xl bg-secondary-light/70 border-t backdrop-blur-sm px-2">
                 {trattamenti.map((item) => (
                   <Link
                     key={item}

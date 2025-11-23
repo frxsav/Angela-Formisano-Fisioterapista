@@ -1,9 +1,9 @@
 export const trattamenti = [
   'Rieducazione Posturale',
-  'Laserterapia',
-  'Tecarterapia',
-  'Terapia Onde Elettriche',
-  'Massoterapia',
+  'Fisioterapia Dermatofunzionale',
+  'Terapia Strumentale',
+  'Terapia Manuale',
+  'Linfodrenaggio',
 ];
 
 export const servizi = [
@@ -136,7 +136,7 @@ export const timelineItems = [
 ];
 
 export const therapies = {
-  laserterapia: {
+  terapiaManuale: {
     list: [
       'Tendinite',
       'Borsite',
@@ -218,7 +218,7 @@ export const therapies = {
     dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
     img: '/images/terapia.webp',
   },
-  massoterapia: {
+  fisioterapiaDermatofunzionale: {
     list: [
       'Tendinite',
       'Borsite',
@@ -259,7 +259,7 @@ export const therapies = {
     dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
     img: '/images/terapia.webp',
   },
-  tecarterapia: {
+  linfodrenaggio: {
     list: [
       'Tendinite',
       'Borsite',
@@ -300,8 +300,8 @@ export const therapies = {
     dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
     img: '/images/terapia.webp',
   },
-  terapiaOndeElettriche: {
-    list: [
+  terapiaStrumentale: {
+    pathologies: [
       'Tendinite',
       'Borsite',
       'Epicondilite/Epitrocleite',
@@ -334,52 +334,28 @@ export const therapies = {
           'Sì, ci sono alcune situazioni in cui la laserterapia non è consigliata o deve essere usata con cautela come esempio in presenza di tumori attivi, gravidanze, dispositivi elettronici (come pacemaker), o pelle fotosensibilizzata.',
       },
     ],
-    title:
-      'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
+    therapies: [
+      {
+        title: 'Laserterapia',
+        dsc: "La laserterapia sfrutta l'energia della luce per stimolare la rigenerazione cellulare, riducendo dolore e infiammazione, migliorando anche la circolazione sanguigna.",
+      },
+      {
+        title: 'Ultrasuono',
+        dsc: "L'ultrasuono è un'onda sonora che penetra nei tessuti ideale per trattare patologie come tendiniti, borsiti e contratture muscolari, accelerando la guarigione dei tessuti.",
+      },
+      {
+        title: 'Tecarterapia',
+        dsc: 'La tecarterapia è una terapia fisica che utilizza correnti elettromagnetiche per stimolare la rigenerazione dei tessuti e ridurre infiammazione, lavorando anche sul miglioramento del drenaggio linfatico, riducendo edemi e gonfiori.',
+      },
+      {
+        title: 'Elettrostimolazione',
+        dsc: "L'elettrostimolazione utilizza impulsi elettrici per stimolare l'attività muscolare e per la gestione del dolore acuto o cronico.",
+      },
+    ],
+    title: 'Terapia strumentale ad Ercolano: Tecnologia contro il dolore.',
     subtitle:
-      'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-    dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+      'Riduci il dolore ed accelera il recupero grazie alle migliori tecnologie elettromedicali.',
+    dsc: "Soffri di dolori muscolari, infiammazioni o rigidità articolare? La terapia strumentale rappresenta l'evoluzione della fisioterapia moderna. Utilizzando energie fisiche precise (onde sonore, campi magnetici, luce laser o correnti), andiamo ad agire direttamente sulla causa del dolore in modo non invasivo.<br/>A differenza dei soli farmaci, che agiscono spesso solo sul sintomo, le nostre tecnologie stimolano i processi riparativi naturali del tuo corpo, permettendo un ritorno alle attività quotidiane più rapido e sicuro.",
     img: '/images/terapia.webp',
   },
-};
-
-export const laserterapia = {
-  list: [
-    'Tendinite',
-    'Borsite',
-    'Epicondilite/Epitrocleite',
-    'Artrosi',
-    'Distorsioni',
-    'Contusioni',
-    'Contratture',
-    'Strappi/Stiramenti',
-    'Dolori cervicali/lombalgie',
-  ],
-  faq: [
-    {
-      question: 'La laserterapia fa male? Ci sono effetti collaterali?',
-      answer:
-        'No, la laserterapia non fa male, è un trattamento non invasivo e generalmente ben tollerato. Durante la seduta puoi avvertire solo una leggera sensazione di calore, che è del tutto normale. <br/> Gli effetti collaterali sono rari, in alcuni casi può comparire un lieve arrossamento temporaneo della zona trattata, che tende a scomparire in breve tempo.<br/>La laserterapia non comporta rischi significativi se eseguita da un professionista qualificato e seguendo le corrette precauzioni.',
-    },
-    {
-      question: 'Come si svolge una seduta di Laserterapia?',
-      answer:
-        "Una seduta dura generalmente dai 10 ai 20 minuti ed è completamente indolore. Il fisioterapista applica il laser sull'area interessata modulando intensità e frequenza in base al tipo di problema. Durante il trattamento potresti avvertire solo una leggera sensazione di calore. <br/> Non sono previsti tempi di recupero, terminata la seduta, puoi tornare subito alle tue attività quotidiane.",
-    },
-    {
-      question: 'Quante sedute sono necessarie per vedere i risultati?',
-      answer:
-        "Il numero di sedute varia in base al tipo di problema e alla sua gravità. In genere, per le condizioni acute possono essere sufficienti 5–10 sedute, mentre per disturbi cronici può essere necessario un ciclo più lungo. Molti pazienti riferiscono un miglioramento già dopo le prime applicazioni, soprattutto in termini di riduzione del dolore e dell'infiammazione.",
-    },
-    {
-      question: 'Ci sono controindicazioni o rischi?',
-      answer:
-        'Sì, ci sono alcune situazioni in cui la laserterapia non è consigliata o deve essere usata con cautela come esempio in presenza di tumori attivi, gravidanze, dispositivi elettronici (come pacemaker), o pelle fotosensibilizzata.',
-    },
-  ],
-  title:
-    'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
-  subtitle: 'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-  dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
-  img: '/images/terapia.webp',
 };

@@ -6,13 +6,12 @@ import { AccordionItem } from '.';
 import { useState } from 'react';
 
 export default function MobileMenuLinks(props) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const toggle = () => {
-    setIsOpen(!isOpen);
-    props.setIsMenuOpen(!isOpen);
+    setIsAccordionOpen(!isAccordionOpen);
   };
   return createPortal(
-    <div className="lg:hidden flex justify-center bg-secondary-light/70 backdrop-blur-sm fixed top-[110px] w-[60%] left-[20%] rounded-b-3xl duration-300 border-b-1 border-r-1 border-l-1 border-secondary/30 z-50">
+    <div className="lg:hidden flex justify-center bg-secondary-light/70 backdrop-blur-sm fixed top-[110px] w-[60%] left-[20%] rounded-b-3xl duration-300 border-b-1 border-r-1 border-l-1 border-secondary/30 z-40">
       <div className="flex flex-col pt-2 pb-3 gap-3 w-full">
         <Link
           href="/"
@@ -27,7 +26,7 @@ export default function MobileMenuLinks(props) {
           Chi Sono
         </Link>
         <AccordionItem
-          isOpen={isOpen}
+          isOpen={isAccordionOpen}
           menu={true}
           question="Trattamenti"
           toggle={() => toggle()}

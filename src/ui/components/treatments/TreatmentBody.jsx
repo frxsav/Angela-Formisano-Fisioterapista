@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { HiClock } from 'react-icons/hi';
 
 export default function TreatmentBody(props) {
   const titleArray = [];
@@ -15,9 +16,13 @@ export default function TreatmentBody(props) {
     dscArray.push(element);
   });
   return (
-    <div className="flex lg:flex-row flex-col lg:gap-64 gap-16 px-[10%]">
-      <div className="flex flex-col lg:gap-8 gap-6">
-        <div className="flex flex-col gap-3">
+    <div className="grid grid-cols-12 px-[10%] pb-32 items-start">
+      <div className="flex flex-col lg:gap-8 gap-6 md:col-span-6 col-span-12">
+        <div className="flex w-fit items-center gap-2 px-3 py-1 rounded-full bg-primary-100/20 border border-primary-100/20 text-primary-900 text-sm tracking-wide font-semibold">
+          <span className="w-2 h-2 rounded-full bg-primary-100"></span>
+          <span>Angela Formisano | Fisioterapista specializzata</span>
+        </div>
+        <div className="flex flex-col gap-3 lg:items-start items-center">
           {titleArray.map((item, index) => (
             <h1
               key={index}
@@ -37,25 +42,32 @@ export default function TreatmentBody(props) {
         {dscArray.map((item, index) => (
           <p
             key={index}
-            className="font-text text-ctext/90 md:text-2xl text-xl md:pt-0 pt-8">
+            className="font-text text-ctext md:text-2xl text-xl md:pt-0 pt-8">
             {item}
           </p>
         ))}
-        <ul className="grid grid-cols-12 gap-3 list-disc pl-6 text-ctext text-xl font-text">
-          {props.therapy.list.map((item, index) => (
-            <li className="lg:col-span-4 col-span-12 lg:pr-3" key={index}>
-              {item}
-            </li>
-          ))}
-        </ul>
       </div>
-      <Image
-        src={props.therapy.img}
-        alt="Laserterapia"
-        width={500}
-        height={500}
-        className="rounded-[5rem] bg-primary-300/25"
-      />
+      <div className="relative lg:col-span-4 col-span-12 lg:col-end-13">
+        <Image
+          src={props.therapy.img}
+          alt="Laserterapia"
+          width={500}
+          height={500}
+          className="rounded-[5rem] bg-primary-300/25"
+        />
+        <div className="absolute md:bottom-8 md:-left-8 bg-white p-6 rounded-3xl shadow-xl border border-gray-100 max-w-xs animate-bounce-slow hidden md:block">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="p-2 bg-primary-100/20 rounded-full text-primary-100">
+              <HiClock size={20} />
+            </div>
+            <span className="font-bold text-primary-900">Recupero Rapido</span>
+          </div>
+          <p className="text-sm text-ctext/75">
+            Protocolli personalizzati per ridurre i tempi di guarigione fino al
+            50%.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

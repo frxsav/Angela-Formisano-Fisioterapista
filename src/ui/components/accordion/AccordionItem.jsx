@@ -7,7 +7,7 @@ import { trattamenti } from '@/lib/data';
 
 export default function AccordionItem(props) {
   const answersArray = [];
-  props.answer.split('<br/>').forEach((element) => {
+  props.answer?.split('<br/>').forEach((element) => {
     answersArray.push(element);
   });
 
@@ -29,7 +29,7 @@ export default function AccordionItem(props) {
         <HiOutlineMinus
           className={`text-2xl ${props.isOpen ? 'block' : 'hidden'}`}
         />
-        <h2 className="lg:text-2xl text-xl font-bold font-title lg:pr-0 pr-6">
+        <h2 className="lg:text-2xl text-lg font-bold font-title lg:pr-0 pr-6">
           {props.question}
         </h2>
       </div>
