@@ -26,7 +26,7 @@ export default function Navbar() {
       {/* Desktop Menu */}
       <DesktopMenuLinks />
       <Link
-        className="hidden lg:flex group text-xl bg-cta-100 hover:bg-cta-100/75 transition-colors duration-300 text-primary-900 py-3 px-6 rounded-3xl shadow-sm flex-row items-center gap-2"
+        className="hidden font-semibold lg:flex group text-xl bg-cta-100 hover:bg-cta-100/75 transition-colors duration-300 text-primary-900 py-3 px-6 rounded-3xl shadow-sm flex-row items-center gap-2"
         href="#appointment">
         Prenota Ora <HiPhone className="text-xl group-hover:animate-shake" />
       </Link>

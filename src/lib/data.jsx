@@ -114,23 +114,25 @@ export const specializzazioni = [
 
 export const timelineItems = [
   {
-    title: 'Laurea in Fisioterapia',
+    title: 'Laurea triennale in Fisioterapia',
     dsc: 'Laureata in Fisioterapia alla Federico II di Napoli a pieni voti con la tesi su questa cosa specifica ecc',
-    year: '2018',
+    year: '2019',
   },
   {
-    title: 'Magistrale in Scienze Riabilitative',
-    dsc: "Laurea magistrale in Scienze Riabilitative presso l'università telematica Pegaso a pieni voti con la tesi su questa cosa specifica ecc",
-    year: '2021',
-  },
-  {
-    title: 'Master in Posturologia',
+    title: 'Master universitario in Posturologia',
     dsc: "Master in Posturologia presso l'università dell'Aquila a pieni voti con la tesi su questa cosa specifica ecc",
+    year: '2022',
+  },
+  {
+    title:
+      'Laurea Magistrale in Scienze Riabilitative delle professioni sanitarie',
+    dsc: "Laurea magistrale in Scienze Riabilitative presso l'università telematica Pegaso a pieni voti con la tesi su questa cosa specifica ecc",
+
     year: '2024',
   },
   {
-    title: 'Laurea in Fisioterapia',
-    dsc: 'Laureata in Fisioterapia alla Federico II di Napoli a pieni voti con la tesi su questa cosa specifica ecc',
+    title: 'Formazione',
+    dsc: 'In continua formazione',
     year: 'In corso',
   },
 ];
@@ -304,40 +306,34 @@ export const therapies = {
     pathologies: {
       title: 'Soluzioni efficaci per ogni patologia',
       subtitle: 'Cosa Curo',
-      dsc: "Grazie all'azione analgesica e biostimolante, la terapia strumentale è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici.",
+      dsc: "Le terapie fisiche come la Tecarterapia, l'Ultrasuonoterapia, la Laserterapia e l'Elettrostimolazione sono comunemente impiegate in fisioterapia e riabilitazione per trattare un'ampia gamma di patologie, principalmente a carico dell'apparato muscolo-scheletrico.",
       list: [
-        'Tendinite',
-        'Borsite',
-        'Epicondilite/Epitrocleite',
+        'Dolori Muscolari',
+        'Cellulite',
+        'Patologie Tendinee',
         'Artrosi',
-        'Distorsioni',
-        'Contusioni',
-        'Contratture',
-        'Strappi/Stiramenti',
-        'Dolori cervicali/lombalgie',
+        'Cervicalgia / Cervicobrachialgia',
+        'Traumi Acuti',
+        'Lombalgia / Lombosciatalgia',
+        'Edemi ed Ematomi',
+        'Grasso Localizzato',
       ],
     },
     faq: [
       {
-        question:
-          'La terapia strumentale fa male? Ci sono effetti collaterali?',
+        question: 'Quando è indicata la Terapia Strumentale?',
         answer:
-          'No, la terapia strumentale non fa male, si tratta di trattamenti non invasivi e generalmente ben tollerati. A seconda della tecnologia utilizzata (come tecar, ultrasuoni, laser o elettrostimolazione), potresti avvertire una sensazione di calore, vibrazione o una lieve stimolazione elettrica, tutte normali e controllate. <br/> Gli effetti collaterali sono rari e solitamente limitati a un leggero arrossamento o una momentanea sensibilità nella zona trattata, che si risolve in breve tempo.',
+          'In caso di dolori muscolari, contratture, edemi o ematomi, traumi distorsivi, contusioni, artrosi o artrite.',
       },
       {
-        question: 'Come si svolge una seduta di terapia strumentale?',
+        question: 'Quanto dura una seduta?',
         answer:
-          "Una seduta dura generalmente dai 10 ai 20 minuti, in base alla metodica scelta e alla problematica da trattare. Utilizzerò l'apparecchiatura più adatta al tuo caso regolandone i parametri in modo personalizzato. <br/> Tutti i trattamenti sono indolori e non richiedono tempi di recupero: al termine puoi tornare normalmente alle tue attività quotidiane.",
+          'Una seduta di terapia strumentale dura i 15 e i 30 minuti, considerati per singola zona del corpo da trattare',
       },
       {
-        question: 'Quante sedute sono necessarie per ottenere risultati?',
+        question: 'Ci sono controindicazioni?',
         answer:
-          'La quantità di sedute varia in base al tipo di disturbo e alla sua intensità. Per condizioni acute possono essere sufficienti 5–10 sedute, mentre per problematiche croniche può essere necessario un percorso più lungo. <br/> Molti pazienti percepiscono miglioramenti già dopo le prime applicazioni, come riduzione del dolore o della rigidità.',
-      },
-      {
-        question: 'Ci sono controindicazioni o rischi?',
-        answer:
-          'Sì, alcune terapie strumentali non sono indicate in specifiche situazioni, come presenza di tumori attivi, gravidanza (per alcune metodiche), pacemaker o altri dispositivi elettronici, infezioni locali o pelle particolarmente sensibilizzata. <br/> Per questo ogni trattamento viene sempre valutato dal fisioterapista in base alla tua storia clinica.',
+          "In alcuni casi non è possibile effettuare la terapia strumentale: se sono presenti patologie tumorali in atto, protesi metalliche vicino la zona d'intervento, pacemaker, gravidanza, infezioni in fase acuta",
       },
     ],
     therapies: {
@@ -347,29 +343,29 @@ export const therapies = {
         {
           title: 'Laserterapia',
           dsc: "La laserterapia sfrutta l'energia della luce per stimolare la rigenerazione cellulare, riducendo dolore e infiammazione, migliorando anche la circolazione sanguigna.",
-          img: "/images/terapia-laserterapia.webp",
+          img: '/images/terapia-laserterapia.webp',
         },
         {
           title: 'Ultrasuono',
           dsc: "L'ultrasuono è un'onda sonora che penetra nei tessuti ideale per trattare patologie come tendiniti, borsiti e contratture muscolari, accelerando la guarigione dei tessuti.",
-          img: "/images/terapia-ultrasuono.webp",
+          img: '/images/terapia-ultrasuono.webp',
         },
         {
           title: 'Tecarterapia',
           dsc: 'La tecarterapia è una terapia fisica che utilizza correnti elettromagnetiche per stimolare la rigenerazione dei tessuti e ridurre infiammazione, lavorando anche sul miglioramento del drenaggio linfatico, riducendo edemi e gonfiori.',
-          img: "/images/terapia-tecarterapia.webp",
+          img: '/images/terapia-tecarterapia.webp',
         },
         {
           title: 'Elettrostimolazione',
           dsc: "L'elettrostimolazione utilizza impulsi elettrici per stimolare l'attività muscolare e per la gestione del dolore acuto o cronico.",
-          img: "/images/terapia-elettrostimolazione.webp",
+          img: '/images/terapia-elettrostimolazione.webp',
         },
       ],
     },
-    title: 'Terapia strumentale ad Ercolano: Tecnologia contro il dolore.',
+    title: 'Terapia strumentale ad Ercolano',
     subtitle:
-      'Riduci il dolore ed accelera il recupero grazie alle migliori tecnologie elettromedicali.',
-    dsc: "Soffri di dolori muscolari, infiammazioni o rigidità articolare? La terapia strumentale rappresenta l'evoluzione della fisioterapia moderna. Utilizzando energie fisiche precise (onde sonore, campi magnetici, luce laser o correnti), andiamo ad agire direttamente sulla causa del dolore in modo non invasivo.<br/>A differenza dei soli farmaci, che agiscono spesso solo sul sintomo, le nostre tecnologie stimolano i processi riparativi naturali del tuo corpo, permettendo un ritorno alle attività quotidiane più rapido e sicuro.",
+      'Riduci il dolore ed accelera il recupero grazie alle tecnologie elettromedicali',
+    dsc: "Se soffri di dolori muscoloscheletrici o hai subito traumi recenti, la terapia strumentale può essere un valido strumento da inserire nel tuo recupero verso il benessere.<br/>Attraverso l'utilizzo di energie fisiche specifiche, si va ad agire direttamente sul problema migliorandone la condizione, stimolando la rigenerazione tissutale, riducendo gonfiori e liquidi in eccesso, e favorendo una più rapida guarigione.",
     img: '/images/terapia.webp',
   },
 };

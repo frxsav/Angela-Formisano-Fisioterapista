@@ -7,11 +7,13 @@ import { Parallax } from 'react-scroll-parallax';
 
 export default function AboutSection() {
   return (
-    <section className="bg-secondary-light pt-48 pb-16">
+    <section className="bg-secondary-light lg:py-16">
       <div className="lg:grid lg:grid-cols-12 flex flex-col w-[80%] m-auto">
         <div className="flex flex-col lg:col-span-6 md:pt-32 pt-16 pb-32 relative gap-6 lg:items-start items-center">
           <div className="flex flex-col lg:items-start items-center">
-            <h5 className='uppercase text-primary-300 font-semibold font-title pb-3'>Chi Sono</h5>
+            <h5 className="uppercase text-primary-300 font-semibold font-title pb-3">
+              Chi Sono
+            </h5>
             <h3 className="text-5xl font-bold tracking-title font-title lg:text-start text-center text-primary-900">
               Formazione ed Esperienza
             </h3>
@@ -29,13 +31,13 @@ export default function AboutSection() {
             <strong>Rieducazione Posturale.</strong>
           </p>
           <Link
-            className="flex w-fit text-xl justify-center bg-white hover:bg-secondary-light border-1 border-primary-900 transition-colors duration-300 text-primary-900 p-3 rounded-full shadow-lg flex-row items-end gap-2"
+            className="flex w-fit font-semibold text-xl justify-center bg-white hover:bg-secondary-light border-1 border-primary-900 transition-colors duration-300 text-primary-900 p-3 rounded-full shadow-lg flex-row items-end gap-2"
             href="/chi-sono">
             Il mio percorso completo
             <HiOutlineArrowUturnRight className="text-xl scale-y-[-1]" />
           </Link>
         </div>
-        <div className="flex flex-row gap-6 lg:col-span-6 lg:pb-0 pb-16">
+        <div className="flex flex-row gap-6 lg:col-span-6 lg:pb-0 pb-16 relative">
           <Parallax className="flex flex-col" speed={10}>
             <Image
               src="/images/fisio1.webp"

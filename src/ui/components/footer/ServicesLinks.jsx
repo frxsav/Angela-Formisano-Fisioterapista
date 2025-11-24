@@ -9,7 +9,7 @@ export default function ServicesLinks() {
         <Link
           key={index}
           href={'/' + item.replaceAll(' ', '-').toLowerCase()}
-          className="text-secondary-light hover:underline underline-offset-4 py-1 rounded-md font-medium">
+          className="text-secondary-light/90 hover:underline underline-offset-4 py-1 rounded-md font-medium">
           {item}
         </Link>
       ))}

@@ -14,36 +14,36 @@ export default function DesktopMenuLinks(props) {
           props.fromFooter ? '' : 'lg:gap-4'
         }`}>
         <p
-          className={`font-bold pb-3 text-2xl ${
+          className={`font-bold pb-2 text-2xl ${
             props.fromFooter ? 'block text-secondary-light' : 'hidden'
           }`}>
           Navigazione
         </p>
         <Link
           href="/"
-          className={`lg:py-2 py-1 rounded-md font-medium transition-colors  ${
+          className={`rounded-md font-medium transition-colors  ${
             props.fromFooter
-              ? 'hover:underline underline-offset-4 text-secondary-light'
-              : 'hover:text-primary-300 px-3'
+              ? 'hover:underline underline-offset-4 text-secondary-light/90 py-1'
+              : 'hover:text-primary-300 px-3 lg:py-2'
           }`}>
           Home
         </Link>
         <Link
           href="/chi-sono"
-          className={`lg:py-2 py-1 rounded-md font-medium transition-colors  ${
+          className={`rounded-md font-medium transition-colors  ${
             props.fromFooter
-              ? 'hover:underline underline-offset-4 text-secondary-light'
-              : 'hover:text-primary-300 px-3'
+              ? 'hover:underline underline-offset-4 text-secondary-light/90 py-1'
+              : 'hover:text-primary-300 px-3 lg:py-2'
           }`}>
           Chi Sono
         </Link>
         {!props.fromFooter && <DropdownMenu />}
         <Link
           href="/contatti"
-          className={`lg:py-2 py-1 rounded-md font-medium transition-colors  ${
+          className={`rounded-md font-medium transition-colors  ${
             props.fromFooter
-              ? 'hover:underline underline-offset-4 text-secondary-light'
-              : 'hover:text-primary-300 px-3'
+              ? 'hover:underline underline-offset-4 text-secondary-light/90 py-1'
+              : 'hover:text-primary-300 px-3 lg:py-2'
           }`}>
           Contatti
         </Link>

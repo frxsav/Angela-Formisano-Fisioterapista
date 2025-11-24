@@ -22,13 +22,13 @@ export default function Reviews() {
 
         <div className="hidden md:flex lg:flex-row flex-col gap-3 w-full md:items-start items-center md:pb-0 pb-16">
           <Link
-            className="text-lg flex flex-row justify-center bg-cta-100 hover:bg-cta-100/75 transition-colors border-1 border-cta-100 duration-300 text-primary-900 p-3 rounded-full shadow-lg items-end gap-2"
+            className="text-lg font-semibold flex flex-row justify-center bg-cta-100 hover:bg-cta-100/75 transition-colors border-1 border-cta-100 duration-300 text-primary-900 p-3 rounded-full shadow-lg items-end gap-2"
             href="/contatti">
             <IoMdCalendar className="text-2xl" />
             Prenota una visita
           </Link>
           <Link
-            className="group flex flex-row items-center text-lg justify-center bg-white hover:bg-white/75 transition-colors duration-300 text-primary-900 p-3 rounded-full shadow-lg gap-2"
+            className="group font-semibold flex flex-row items-center text-lg justify-center bg-white hover:bg-white/75 transition-colors duration-300 text-primary-900 p-3 rounded-full shadow-lg gap-2"
             href="/contatti">
             +39 3394211017
             <HiPhone className="text-xl group-hover:animate-shake" />
@@ -66,12 +66,12 @@ export default function Reviews() {
       </div>
       <div className="flex md:hidden lg:flex-row flex-col gap-3 w-full md:items-start items-center md:pb-0 pb-16 pt-8">
         <Link
-          className="text-xl justify-center bg-cta-100 hover:bg-cta-900 transition-colors border-1 border-cta-100 hover:border-cta-900 duration-300 text-primary-900 p-4 rounded-full shadow-lg flex-row items-end gap-2"
+          className="text-xl font-semibold justify-center bg-cta-100 hover:bg-cta-900 transition-colors border-1 border-cta-100 hover:border-cta-900 duration-300 text-primary-900 p-4 rounded-full shadow-lg flex-row items-end gap-2"
           href="/contatti">
           Prenota una visita
         </Link>
         <Link
-          className="group flex flex-row items-center text-xl justify-center bg-secondary-light border-1 border-primary-900 hover:bg-cta-100 transition-colors duration-300 text-primary-900 p-4 rounded-full shadow-lg gap-2"
+          className="group font-semibold flex flex-row items-center text-xl justify-center bg-secondary-light border-1 border-primary-900 hover:bg-cta-100 transition-colors duration-300 text-primary-900 p-4 rounded-full shadow-lg gap-2"
           href="/contatti">
           +39 3394211017
           <HiPhone className="text-xl group-hover:animate-shake" />
