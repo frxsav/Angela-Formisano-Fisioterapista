@@ -32,7 +32,7 @@ export default function TreatmentBody(props) {
               {item}
             </h1>
           ))}
-          <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+          <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
         </div>
         {subtitleArray.map((item, index) => (
           <h2

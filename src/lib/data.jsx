@@ -41,22 +41,22 @@ export const servizi = [
 
 export const accordionItems = [
   {
-    question: 'A cosa serve la FIsioterapia?',
+    question: 'A cosa serve la Fisioterapia?',
     answer:
       'La fisitoerapia serve a farti stare bene se non stai bene se hai dolori li toglie e bla bla bla.',
   },
   {
-    question: 'A cosa serve la FIsioterapia?',
+    question: 'A cosa serve la Fisioterapia?',
     answer:
       'La fisitoerapia serve a farti stare bene se non stai bene se hai dolori li toglie e bla bla bla.',
   },
   {
-    question: 'A cosa serve la FIsioterapia?',
+    question: 'A cosa serve la Fisioterapia?',
     answer:
       'La fisitoerapia serve a farti stare bene se non stai bene se hai dolori li toglie e bla bla bla.',
   },
   {
-    question: 'A cosa serve la FIsioterapia?',
+    question: 'A cosa serve la Fisioterapia?',
     answer:
       'La fisitoerapia serve a farti stare bene se non stai bene se hai dolori li toglie e bla bla bla.',
   },

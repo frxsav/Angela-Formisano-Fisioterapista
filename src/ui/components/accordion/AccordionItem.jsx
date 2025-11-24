@@ -24,12 +24,12 @@ export default function AccordionItem(props) {
         }`}
         onClick={props.toggle}>
         <HiOutlinePlus
-          className={`text-2xl ${props.isOpen ? 'hidden' : 'block'}`}
+          className={`text-2xl text-cta-100 ${props.isOpen ? 'hidden' : 'block'}`}
         />
         <HiOutlineMinus
-          className={`text-2xl ${props.isOpen ? 'block' : 'hidden'}`}
+          className={`text-2xl text-cta-100 ${props.isOpen ? 'block' : 'hidden'}`}
         />
-        <h2 className="lg:text-2xl text-lg font-bold font-title lg:pr-0 pr-6">
+        <h2 className="lg:text-2xl text-lg font-semibold font-title lg:pr-0 pr-6">
           {props.question}
         </h2>
       </div>

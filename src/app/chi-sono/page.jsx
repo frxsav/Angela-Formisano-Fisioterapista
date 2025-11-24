@@ -20,7 +20,7 @@ export default function About() {
               <h3 className="md:text-6xl text-5xl font-bold text-primary-900 text-shadow-ctext text-shadow-xs lg:text-start text-center">
                 Angela Formisano
               </h3>
-              <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+              <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
               <h4 className="md:text-2xl text-xl text-primary-300 font-semibold pb-4 lg:text-start text-center">
                 Fisioterapista Iscritta all'Ordine interprovinciale della
                 Professione Sanitaria di Fisioterapista di Napoli, Avellino,
@@ -45,7 +45,7 @@ export default function About() {
             <h3 className="md:text-5xl text-3xl font-bold text-primary-900 text-shadow-ctext text-shadow-xs lg:text-start text-center">
               Percorso di studi ed approccio
             </h3>
-            <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+            <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
             <Timeline></Timeline>
           </div>
         </div>

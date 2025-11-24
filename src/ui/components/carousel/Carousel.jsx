@@ -8,10 +8,12 @@ import {
 } from './CarouselArrowButtons';
 import useEmblaCarousel from 'embla-carousel-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { servizi } from '@/lib/data';
+import { HiChevronRight } from 'react-icons/hi';
+import { redirect } from 'next/navigation';
 
 const Carousel = (props) => {
-
   const options = { dragFree: true, loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
@@ -28,23 +30,33 @@ const Carousel = (props) => {
         <div className="embla__container">
           {servizi.map((servizio, index) => (
             <div
-              className="embla__slide flex-none lg:basis-1/3 md:basis-1/2 basis-full"
+              className="cursor-pointer embla__slide flex-none lg:basis-1/3 md:basis-1/2 basis-full group overflow-hidden"
               key={index}>
               <div
-                className="embla__slide__number px-12 lg:rounded-xl pt-18 pb-12 bg-hero-pattern min-h-[19rem] justify-items-center"
-                style={{
-                  background: `linear-gradient(oklch(0.2966 0.0901 252.5 / 0.25), oklch(0.2966 0.0901 252.5 / 0.75)), url(${servizio.img}) center center / cover no-repeat`,
-                }}>
-                <p className="font-title font-bold text-2xl text-shadow-sm text-center text-ctext-light">
+                className="embla__slide__number px-12 lg:rounded-xl pt-18 pb-12 bg-hero-pattern min-h-[19rem] justify-items-center relative overflow-hidden"
+                onClick={() =>
+                  redirect(
+                    '/' + servizio.title.replaceAll(' ', '-').toLowerCase()
+                  )
+                }>
+                <Image
+                  src={servizio.img}
+                  fill
+                  alt="Alt Image"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-primary-900/40 to-transparent group-hover:from-primary-500/90 transition-colors duration-300 z-30"></div>
+                <p className="font-title font-bold text-2xl text-shadow-sm text-center text-ctext-light z-40">
                   {servizio.title} {servizio.id}
                 </p>
-                <span className="text-center text-xl font-text text-ctext-light">
+                <span className="text-center text-xl font-text text-ctext-light z-40">
                   {servizio.dsc}
                 </span>
                 <Link
-                  className="lg:w-[50%] self-center text-lg tracking-cta bg-cta-100 hover:bg-secondary-light transition-colors duration-500 text-primary-900 p-3 rounded-full shadow-lg text-center"
+                  className="lg:w-[50%] uppercase font-semibold flex items-center justify-center gap-3 self-center text-lg bg-transparent transition-colors duration-500 text-cta-100 group-hover:text-ctext-light p-3 rounded-full text-center z-40"
                   href="#appointment">
                   Scopri di più
+                  <HiChevronRight />
                 </Link>
               </div>
             </div>

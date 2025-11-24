@@ -8,7 +8,7 @@ export default function (props) {
           <h2 className="text-3xl font-bold text-primary-900">
             {props.therapies.title}
           </h2>
-          <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+          <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
           <p className="text-xl text-ctext/75 max-w-2xl mt-4 font-text">
             {props.therapies.dsc}
           </p>

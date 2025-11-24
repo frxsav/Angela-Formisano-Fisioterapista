@@ -17,7 +17,7 @@ export default function Contact() {
                 <h3 className="text-4xl font-semibold font-title text-ctext md:text-start text-center">
                   Richiedi un appuntamento
                 </h3>
-                <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+                <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
                 <p className="text-2xl font-text pt-4 w-[90%] md:text-start text-center">
                   Compila il modulo per descrivere il tuo problema. Ti
                   ricontatterò al più presto per fissare una visita.

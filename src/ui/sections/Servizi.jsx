@@ -10,10 +10,10 @@ export default function ServiziSection() {
   return (
     <section className="pt-80 bg-secondary-light">
       <div className="flex flex-col items-center w-[80%] m-auto self-center pb-32">
-        <h3 className="font-text lg:text-5xl text-4xl font-black tracking-tight uppercase text-shadow-sm lg:text-start text-center pb-1 text-primary-900">
+        <h3 className="font-text lg:text-5xl text-4xl font-black tracking-tight text-shadow-sm lg:text-start text-center pb-1 text-primary-900">
           Come posso aiutarti
         </h3>
-        <div className="border-t-5 border-primary-300 h-[1px] w-[100px]"></div>
+        <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
         <h3 className="lg:text-3xl text-2xl lg:text-start text-center font-text text-ctext/90 pt-3">
           Trattamenti fisioterapici su misura per ogni esigenza del paziente
         </h3>
@@ -37,14 +37,6 @@ export default function ServiziSection() {
         </ul>
         <Carousel />
       </div>
-      <svg viewBox="0 0 1000 100" className="absolute">
-        <path
-          d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-	c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-	c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-          fill="oklch(94.611% 0.00011 271.152)"
-        />
-      </svg>
     </section>
   );
 }

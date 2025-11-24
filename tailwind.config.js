@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        spectral: ['var(--font-spectral)'],
+        cardo: ['var(--font-cardo)'],
       },
     },
   },

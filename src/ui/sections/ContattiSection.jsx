@@ -21,7 +21,7 @@ export default function ContattiSection(props) {
             : 'Contattami per una valutazione e scopri come posso aiutarti a stare meglio, con trattamenti mirati e un approccio personalizzato.'}
         </p>
         <Link
-          className="flex md:w-[30%] tracking-cta text-xl justify-center bg-cta-100 hover:bg-secondary-light transition-colors duration-300 text-primary-900 p-3 rounded-full shadow-lg flex-row items-end gap-2"
+          className="flex w-fit text-xl justify-center bg-cta-100 hover:bg-cta-100/75 transition-colors duration-300 text-primary-900 py-3 px-6 rounded-full shadow-lg flex-row items-end gap-2"
           href="/contatti">
           {props.cta
             ? props.cta

@@ -1,18 +1,18 @@
 import './globals.css';
-import { Spectral } from 'next/font/google';
+import { Cardo } from 'next/font/google';
 import { Header, Footer } from '@/ui';
 import { Providers } from '@/providers/ParallaxProvider';
 
-const spectral = Spectral({
+const cardo = Cardo({
   subsets: ['latin'],
-  weight: ['300'],
-  variable: '--font-spectral',
+  weight: ['400'],
+  variable: '--font-cardo',
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${spectral.variable}`}>
+      <body className={`${cardo.variable}`}>
         <Header className="z-50" />
         <Providers>{children}</Providers>
         <Footer className="bottom-0 w-full" />
