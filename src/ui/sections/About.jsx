@@ -20,15 +20,17 @@ export default function AboutSection() {
             <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
           </div>
           <p className="text-xl text-ctext/90 font-text leading-text lg:w-[75%] w-[90%] lg:text-start text-center">
-            Mi sono laureata nel 2018 in <strong>Fisioterapia</strong> alla
-            Federico II di Napoli, conseguendo successivamente{' '}
-            <strong>Master in Posturologia</strong> e in qualcos'altro.
+            Mi sono laureata nel 2019 in <strong>Fisioterapia</strong> presso
+            l'università Federico II di Napoli, conseguendo successivamente in{' '}
+            <strong>Master in Posturologia</strong> e la laurea magistrale in{' '}
+            <strong>Scienze riabilitative delle professioni sanitarie.</strong>
             <br />
             <br />
-            Da allora non ho mai smesso di informarmi e formarmi seguendo corsi
-            di formazione per tecnologie innovative e metodi all'avanguardia
-            specializzandomi in <strong>Linfodrenaggio</strong> e{' '}
-            <strong>Rieducazione Posturale.</strong>
+            Da allora non ho mai smesso di formarmi, partecipando a diversi
+            corsi di formazione, spaziando dalla{' '}
+            <strong>rieduaczione posturale</strong> alla{' '}
+            <strong>fisioterapia dermatofunzionale</strong> e alla{' '}
+            <strong>terapia strumentale</strong>.
           </p>
           <Link
             className="flex w-fit font-semibold text-xl justify-center bg-white hover:bg-secondary-light border-1 border-primary-900 transition-colors duration-300 text-primary-900 p-3 rounded-full shadow-lg flex-row items-end gap-2"

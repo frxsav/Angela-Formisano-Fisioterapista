@@ -13,7 +13,7 @@ export default function ContattiSection(props) {
         <h3 className="md:text-4xl text-2xl text-primary-900 text-shadow-2xs text-center font-bold">
           {props.title
             ? props.title
-            : 'Hai bisogno di un percorso fisioterapico su misura ad Ercolano?'}
+            : 'Hai bisogno di un percorso riabilitativo su misura ad Ercolano?'}
         </h3>
         <p className="text-ctext/90 md:text-xl text-lg font-text leading-text text-center">
           {props.dsc
@@ -23,9 +23,7 @@ export default function ContattiSection(props) {
         <Link
           className="flex w-fit md:text-xl text-lg font-semibold justify-center bg-cta-100 hover:bg-cta-100/75 transition-colors duration-300 text-primary-900 py-3 px-6 rounded-full shadow-lg flex-row items-end gap-2"
           href="/contatti">
-          {props.cta
-            ? props.cta
-            : 'Contattami'}
+          {props.cta ? props.cta : 'Contattami'}
         </Link>
       </Parallax>
     </section>

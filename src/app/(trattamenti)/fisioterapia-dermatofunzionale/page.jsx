@@ -1,7 +1,13 @@
 'use client';
 
 import { therapies } from '@/lib/data';
-import { ContattiSection, MiniHero, TreatmentBody, TreatmentFaq } from '@/ui';
+import {
+  ContattiSection,
+  MiniHero,
+  TreatmentBody,
+  TreatmentFaq,
+  TreatmentPathologiesDetailed,
+} from '@/ui';
 
 export default function FisioterapiaDermatofunzionale() {
   return (
@@ -9,6 +15,10 @@ export default function FisioterapiaDermatofunzionale() {
       <MiniHero title="Fisioterapia Dermatofunzionale" />
       <div className="bg-secondary-light py-32 flex flex-col text-ctext relative">
         <TreatmentBody therapy={therapies.fisioterapiaDermatofunzionale} />
+        {/* Patologie */}
+        <TreatmentPathologiesDetailed
+          pathologies={therapies.fisioterapiaDermatofunzionale.pathologies}
+        />
         <TreatmentFaq faq={therapies.fisioterapiaDermatofunzionale.faq} />
       </div>
       <ContattiSection

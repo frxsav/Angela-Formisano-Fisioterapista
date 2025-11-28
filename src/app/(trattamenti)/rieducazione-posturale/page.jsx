@@ -1,7 +1,13 @@
 'use client';
 
 import { therapies } from '@/lib/data';
-import { ContattiSection, MiniHero, TreatmentBody, TreatmentFaq } from '@/ui';
+import {
+  ContattiSection,
+  MiniHero,
+  TreatmentBody,
+  TreatmentFaq,
+  TreatmentPathologies,
+} from '@/ui';
 
 export default function RieducazionePosturale() {
   return (
@@ -9,10 +15,14 @@ export default function RieducazionePosturale() {
       <MiniHero title="Rieducazione Posturale" />
       <div className="bg-secondary-light py-32 flex flex-col text-ctext relative">
         <TreatmentBody therapy={therapies.rieducazionePosturale} />
+        {/* Patologie */}
+        <TreatmentPathologies
+          pathologies={therapies.rieducazionePosturale.pathologies}
+        />
         <TreatmentFaq faq={therapies.rieducazionePosturale.faq} />
       </div>
       <ContattiSection
-        title="Prenota ora una seduta di Rieducazione Posturale"
+        title="Prenota ora una valutazione posturale personalizzata"
         cta="Prenota Ora"
       />
     </section>

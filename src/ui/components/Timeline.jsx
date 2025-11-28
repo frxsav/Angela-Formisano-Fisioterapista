@@ -16,11 +16,10 @@ export default function Timeline() {
                 : /**Dispari */
                   'md:pr-8 pr-0 md:order-1 md:col-start-3'
             }`}>
-            <div className="bg-white flex flex-col gap-4 p-4 rounded-3xl shadow-md">
-              <h4 className="text-2xl font-bold font-title text-primary-900">
+            <div className="bg-white flex flex-col gap-4 p-6 rounded-3xl shadow-md">
+              <h4 className="text-xl font-bold font-title text-primary-900">
                 {item.title}
               </h4>
-              <p className="text-ctext/90 font-text text-xl">{item.dsc}</p>
             </div>
           </div>
           <div className="bg-cta-100 w-[2px] h-full absolute top-0 col-span-6 left-1/2 -translate-x-1/2 z-30"></div>
@@ -57,7 +56,6 @@ export default function Timeline() {
           </div>
         </div>
       ))}
-
     </div>
   );
 }

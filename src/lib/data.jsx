@@ -101,38 +101,34 @@ export const reviews = [
 ];
 
 export const studi = [
-  'Laurea in Fisioterapia',
+  'Laurea triennale in Fisioterapia',
   'Master in Posturologia',
-  "Specializzazione in qualcos'altro",
+  'Laurea magistrale in Fisioterapia',
 ];
 
 export const specializzazioni = [
-  'Patologie del sistema muscolo-scheletrico',
-  'Linfodrenaggio',
-  'Rieducazione posturale con Metodo Raggi e Metodo Pancafit',
+  'Rieducaaione Posturale',
+  'Fisioterapia dermatofunzionale',
+  'Patologie del sistema muscoloscheletrico',
 ];
 
 export const timelineItems = [
   {
-    title: 'Laurea triennale in Fisioterapia',
-    dsc: 'Laureata in Fisioterapia alla Federico II di Napoli a pieni voti con la tesi su questa cosa specifica ecc',
+    title:
+      "Laurea triennale in Fisioterapia presso l'Università Federico II di Napoli",
     year: '2019',
   },
   {
-    title: 'Master universitario in Posturologia',
-    dsc: "Master in Posturologia presso l'università dell'Aquila a pieni voti con la tesi su questa cosa specifica ecc",
+    title: "Master in Posturologia presso l'Università telematica Pegaso",
     year: '2022',
   },
   {
     title:
-      'Laurea Magistrale in Scienze Riabilitative delle professioni sanitarie',
-    dsc: "Laurea magistrale in Scienze Riabilitative presso l'università telematica Pegaso a pieni voti con la tesi su questa cosa specifica ecc",
-
+      'Laurea Magistrale in Scienze riabilitative delle professioni sanitarie',
     year: '2024',
   },
   {
     title: 'Formazione',
-    dsc: 'In continua formazione',
     year: 'In corso',
   },
 ];
@@ -180,17 +176,22 @@ export const therapies = {
     img: '/images/terapia.webp',
   },
   rieducazionePosturale: {
-    list: [
-      'Tendinite',
-      'Borsite',
-      'Epicondilite/Epitrocleite',
-      'Artrosi',
-      'Distorsioni',
-      'Contusioni',
-      'Contratture',
-      'Strappi/Stiramenti',
-      'Dolori cervicali/lombalgie',
-    ],
+    pathologies: {
+      title: 'Soluzioni efficaci per ogni patologia',
+      subtitle: 'Cosa Curo',
+      dsc: "Le terapie fisiche come la Tecarterapia, l'Ultrasuonoterapia, la Laserterapia e l'Elettrostimolazione sono comunemente impiegate in fisioterapia e riabilitazione per trattare un'ampia gamma di patologie, principalmente a carico dell'apparato muscolo-scheletrico.",
+      list: [
+        'Lombalgia / Lombosciatalgia',
+        'Ernie',
+        'Protrusioni',
+        'Artrosi',
+        'Cervicalgia / Cervicobrachialgia',
+        'Epicondilite / Epitrocleite',
+        'Sindrome della spalla congelata',
+        'Scoliosi / Dorso curvo',
+        'Recupero post-operatorio',
+      ],
+    },
     faq: [
       {
         question: 'La laserterapia fa male? Ci sono effetti collaterali?',
@@ -213,25 +214,40 @@ export const therapies = {
           'Sì, ci sono alcune situazioni in cui la laserterapia non è consigliata o deve essere usata con cautela come esempio in presenza di tumori attivi, gravidanze, dispositivi elettronici (come pacemaker), o pelle fotosensibilizzata.',
       },
     ],
-    title:
-      'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
-    subtitle:
-      'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-    dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+    title: "Rieducazione posturale: Ritrova l'Equilibrio del Tuo Corpo",
+    subtitle: 'La postura è molto più di come ci si siede o si sta in piedi',
+    dsc: 'Quando il nostro corpo viene attraversato da traumi, fisici o emotivi, stress, cattive abitudini o patologie varie, si sviluppano tensioni e fastidi diffusi che spesso sono la principale causa di dolori alla colonna, agli arti superiori o inferiori, e così via.<br/>La Rieducazione Posturale parte prima di tutto da un’attenta valutazione posturale, tenendo conto della storia clinica, delle abitudini e della morfologia specifica della persona. Successivamente, si elabora un programma riabilitativo personalizzato per aiutare a ritrovare il proprio benessere e migliorare di conseguenza la propria qualità di vita.<br/>Questo trattamento riabilitativo è indicato per persone di tutte le età e può essere applicato sia come prevenzione, per evitare che si presentino in futuro fastidi, limitazioni articolari o patologie muscoloscheletriche, sia come cura per dolori muscolari, rigidità articolari, o condizioni specifiche come la scoliosi.',
     img: '/images/terapia.webp',
   },
   fisioterapiaDermatofunzionale: {
-    list: [
-      'Tendinite',
-      'Borsite',
-      'Epicondilite/Epitrocleite',
-      'Artrosi',
-      'Distorsioni',
-      'Contusioni',
-      'Contratture',
-      'Strappi/Stiramenti',
-      'Dolori cervicali/lombalgie',
-    ],
+    pathologies: {
+      title: 'Soluzioni efficaci per ogni patologia',
+      subtitle: 'Cosa Curo',
+      dsc: 'Con la fisioterapia dermatofunzionale tratteremo',
+      list: [
+        {
+          title: 'Cicatrici post-chirurgiche / post-traumatiche',
+          dsc: "prevenendo problemi posturali e retrazioni dei tessuti, migliorandone di conseguenza l'aspetto estetico",
+        },
+        {
+          title: 'Patologie del sistema linfatico',
+          dsc: "Per ridurre l'accumulo di liquidi interstiziali e migliorare della circolazione linfatica e venosa, essenziale per la rigenerazione tissutale e la riduzione del gonfiore",
+        },
+        {
+          title:
+            'Cellulite, riconosciuta come pannicolopatia edematofibrosclerotica (PEFS)',
+          dsc: "agendo sulle alterazioni del microcircolo e del tessuto adiposo, migliorando non solo il drenaggio dei liquidi in eccesso ma anche l'aspetto estetico della cute, riducendo la classica “buccia d'arancia” visibile sulle gambe",
+        },
+        {
+          title: 'Adiposità localizzata',
+          dsc: 'Lavorando sulla stimolazione della produzione di collagene ed elastina e sul miglioramento della tonicità muscolare, quasi sempre associata a un accumulo di grasso',
+        },
+        {
+          title: 'Invecchiamento cutaneo',
+          dsc: 'Per contrastare e rallentare i segni del tempo sul viso, stimolando la produzione di collagene e riducendo la lassità dei tessuti',
+        },
+      ],
+    },
     faq: [
       {
         question: 'La laserterapia fa male? Ci sono effetti collaterali?',
@@ -254,11 +270,10 @@ export const therapies = {
           'Sì, ci sono alcune situazioni in cui la laserterapia non è consigliata o deve essere usata con cautela come esempio in presenza di tumori attivi, gravidanze, dispositivi elettronici (come pacemaker), o pelle fotosensibilizzata.',
       },
     ],
-    title:
-      'Laserterapia ad Ercolano: <br/>La tecnologia che riduce il dolore e accelera il recupero',
+    title: 'Fisioterapia Dermatofunzionale: la cura che va oltre la superficie',
     subtitle:
       'Soffri di dolori muscolari, infiammazioni o rigidità articolare?',
-    dsc: "La laserterapia è un trattamento non invasivo che utilizza fasci di luce ad alta intensità per ridurre il dolore, diminuire l'infiammazione e stimolare la rigenerazione dei tessuti. Agendo in profondità, il laser favorisce un recupero più rapido e mirato, rendendolo particolarmente efficace in caso di disturbi muscolari, articolari o tendinei. <br/> <br/>Grazie alla sua azione analgesica e biostimolante, la laserterapia è indicata in numerose condizioni, dalle infiammazioni acute ai fastidi cronici. Di seguito trovi alcune delle situazioni in cui può essere particolarmente utile:",
+    dsc: "La Fisioterapia Dermatofunzionale è una branca della fisioterapia che si concentra sulla valutazione e sul trattamento delle alterazioni che coinvolgono la pelle e i tessuti sottostanti.<br/>Non si limita ad affrontare problemi puramente estetici, ma si dedica al recupero della funzionalità cutanea e tessutale compromessa da patologie, traumi, interventi chirurgici o processi degenerativi. <br/>Questa disciplina unisce una profonda conoscenza dell'anatomia, della fisiologia e della patologia dei tessuti con l'utilizzo di specifiche tecniche manuali e strumentali. L'obiettivo primario è ripristinare l'equilibrio biologico e biomeccanico dei tessuti, migliorando l'elasticità, la vascolarizzazione, il drenaggio e, di conseguenza, la salute e l'aspetto della zona trattata.",
     img: '/images/terapia.webp',
   },
   linfodrenaggio: {
@@ -309,12 +324,12 @@ export const therapies = {
       dsc: "Le terapie fisiche come la Tecarterapia, l'Ultrasuonoterapia, la Laserterapia e l'Elettrostimolazione sono comunemente impiegate in fisioterapia e riabilitazione per trattare un'ampia gamma di patologie, principalmente a carico dell'apparato muscolo-scheletrico.",
       list: [
         'Dolori Muscolari',
-        'Cellulite',
+        'Lombalgia / Lombosciatalgia',
         'Patologie Tendinee',
         'Artrosi',
         'Cervicalgia / Cervicobrachialgia',
         'Traumi Acuti',
-        'Lombalgia / Lombosciatalgia',
+        'Cellulite',
         'Edemi ed Ematomi',
         'Grasso Localizzato',
       ],
@@ -327,13 +342,12 @@ export const therapies = {
       },
       {
         question: 'Quanto dura una seduta?',
-        answer:
-          'Una seduta di terapia strumentale dura i 15 e i 30 minuti, considerati per singola zona del corpo da trattare',
+        answer: 'Una seduta di terapia strumentale dura i 15 e i 30 minuti.',
       },
       {
         question: 'Ci sono controindicazioni?',
         answer:
-          "In alcuni casi non è possibile effettuare la terapia strumentale: se sono presenti patologie tumorali in atto, protesi metalliche vicino la zona d'intervento, pacemaker, gravidanza, infezioni in fase acuta",
+          'In presenza di alcune condizioni particolari o patologie specifiche è bene astenersi dal sottoporsi a sedute di terapia strumentale.',
       },
     ],
     therapies: {

@@ -33,7 +33,7 @@ export default function TerapiaStrumentale() {
         <TreatmentFaq faq={therapies.terapiaStrumentale.faq} />
       </div>
       <ContattiSection
-        title="Prenota ora una seduta di Terapia Strumentale"
+        title="Contattami in privato per prenotare un appuntamento"
         cta="Prenota Ora"
       />
     </section>

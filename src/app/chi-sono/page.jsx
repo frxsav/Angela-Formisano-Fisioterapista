@@ -12,8 +12,8 @@ export default function About() {
             <Image
               src="/images/fisioterapista.png"
               alt="Angela Formisano | Fisioterapista"
-              width={433}
-              height={433}
+              width={500}
+              height={500}
               className="rounded-full bg-primary-300/25"
             />
             <div className="flex flex-col gap-3 lg:items-start lg:max-w-[60%] lg:pr-32 items-center lg:px-0 px-4">
@@ -21,7 +21,7 @@ export default function About() {
                 Angela Formisano
               </h3>
               <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
-              <h4 className="md:text-2xl text-xl text-primary-300 font-semibold pb-4 lg:text-start text-center">
+              <h4 className="md:text-2xl text-xl text-primary-300 italic font-semibold pb-4 lg:text-start text-center">
                 Fisioterapista Iscritta all'Ordine interprovinciale della
                 Professione Sanitaria di Fisioterapista di Napoli, Avellino,
                 Benevento e Caserta n.3850
