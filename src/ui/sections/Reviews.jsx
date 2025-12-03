@@ -11,8 +11,9 @@ export default function Reviews() {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   return (
-    <section className="bg-linear-to-l from-primary-900/90 to-primary-900 flex md:flex-row flex-col py-16 px-[10%]">
-      <div className="flex flex-col items-start lg:w-[50%] md:w-[60%] w-full md:pr-16 pr-0 md:gap-16 gap-8 md:pb-0 pb-8">
+    <section className="flex md:flex-row flex-col py-16 relative">
+      <div class="absolute top-0 z-30 h-full w-full bg-primary-100 bg-[radial-gradient(#ffffff33_1px,#00244de6_1px)] bg-[size:150px_150px]"></div>
+      <div className="z-40 flex flex-col items-start lg:w-[50%] md:w-[60%] w-full md:pr-16 pr-0 md:gap-16 gap-8 md:pb-0 pb-8 pl-[10%]">
         <div className="flex flex-col gap-3 md:items-start items-center">
           <h3 className="text-5xl text-shadow-xs md:text-start text-center text-ctext-light font-bold font-roboto">
             Cosa ne pensano i miei pazienti
@@ -35,7 +36,7 @@ export default function Reviews() {
           </Link>
         </div>
       </div>
-      <div className="embla lg:w-full md:w-[40%] w-full">
+      <div className="embla lg:w-full md:w-[40%] w-full z-40">
         <div
           className="md:max-w-[50vw] max-w-[100vw] overflow-hidden"
           ref={emblaRef}>
@@ -43,13 +44,13 @@ export default function Reviews() {
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="embla__slide flex flex-col bg-primary-300/25 backdrop-blur-sm p-6 flex-none lg:basis-1/3 basis-full rounded-3xl">
+                className="embla__slide flex flex-col bg-secondary-light/10 border-1 border-secondary-light/20 backdrop-blur-lg p-6 flex-none lg:basis-1/3 basis-full rounded-3xl">
                 <div className="embla__slide__number h-[300px]">
                   <h3 className="text-3xl font-semibold text-ctext-light font-display">
                     {review.autore}
                   </h3>
                   <div className="flex flex-col justify-start gap-6">
-                    <div className="flex flex-row text-xl border-b-1 border-secondary-light/30 pb-6">
+                    <div className="flex flex-row text-xl border-b-1 border-secondary-light/20 pb-2">
                       {Array.from({ length: review.stelle }, (_, index) => (
                         <HiStar key={index} className="text-primary-100" />
                       ))}

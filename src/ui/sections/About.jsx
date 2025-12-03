@@ -40,7 +40,7 @@ export default function AboutSection() {
           </Link>
         </div>
         <div className="flex flex-row gap-6 lg:col-span-6 lg:pb-0 pb-16 relative">
-          <Parallax className="flex flex-col" speed={10}>
+          <Parallax className="flex flex-col" speed={5}>
             <Image
               src="/images/fisio1.webp"
               alt="Fisio 1"
@@ -49,7 +49,7 @@ export default function AboutSection() {
               className="rounded-[100px]"
             />
           </Parallax>
-          <Parallax className="flex flex-col" speed={-10}>
+          <Parallax className="flex flex-col" speed={-5}>
             <Image
               src="/images/fisio2.webp"
               alt="Fisio 2"

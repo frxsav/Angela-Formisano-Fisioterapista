@@ -33,7 +33,7 @@ const Carousel = (props) => {
               className="cursor-pointer embla__slide flex-none lg:basis-1/3 md:basis-1/2 basis-full group overflow-hidden"
               key={index}>
               <div
-                className="embla__slide__number px-8 md:px-12 lg:rounded-xl pt-18 pb-4 bg-hero-pattern min-h-[19rem] relative overflow-hidden"
+                className="embla__slide__number px-8 md:px-12 rounded-xl pt-18 pb-4 bg-hero-pattern min-h-[19rem] relative overflow-hidden"
                 onClick={() =>
                   redirect(
                     '/' + servizio.title.replaceAll(' ', '-').toLowerCase()
