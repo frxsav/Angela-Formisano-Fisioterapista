@@ -10,12 +10,12 @@ export default function ContattiSection(props) {
       <Parallax
         speed={5}
         className="z-40 flex flex-col gap-5 items-center justify-center md:px-16 px-8 py-8 bg-secondary-light/70 backdrop-blur-sm rounded-3xl lg:w-[50%] w-[90%] shadow-xl">
-        <h3 className="md:text-4xl text-2xl text-primary-900 text-shadow-2xs text-center font-bold">
+        <h3 className="md:text-4xl text-2xl text-primary-900 text-shadow-2xs text-center font-bold tracking-tight">
           {props.title
             ? props.title
             : 'Hai bisogno di un percorso riabilitativo su misura ad Ercolano?'}
         </h3>
-        <p className="text-ctext/90 md:text-xl text-lg font-text leading-text text-center">
+        <p className="text-ctext/90 md:text-xl text-lg font-display leading-text text-center">
           {props.dsc
             ? props.dsc
             : 'Contattami per una valutazione e scopri come posso aiutarti a stare meglio, con trattamenti mirati e un approccio personalizzato.'}

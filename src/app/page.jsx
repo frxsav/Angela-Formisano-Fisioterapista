@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="font-title">
+    <main className="font-roboto">
       <Hero />
       <ServiziSection />
       <AboutSection />

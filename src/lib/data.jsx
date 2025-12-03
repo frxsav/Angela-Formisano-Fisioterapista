@@ -2,7 +2,7 @@ export const trattamenti = [
   'Rieducazione Posturale',
   'Fisioterapia Dermatofunzionale',
   'Terapia Strumentale',
-  'Terapia Manuale',
+  'Recupero Post-Operatorio',
   'Linfodrenaggio',
 ];
 
@@ -14,25 +14,25 @@ export const servizi = [
     img: '/images/rieducazione-posturale.webp',
   },
   {
-    title: 'Rieducazione Posturale',
+    title: 'Fisioterapia Dermatofunzionale',
     dsc: 'La rieducazione posturale è un approccio terapeutico',
     id: 2,
     img: '/images/rieducazione-posturale-e-linfodrenaggio.webp',
   },
   {
-    title: 'Rieducazione Posturale',
+    title: 'Terapia Strumentale',
     dsc: 'La rieducazione posturale Questo metodo aiuta a migliorare la posturafuture.',
     id: 3,
     img: '/images/rieducazione-posturale.webp',
   },
   {
-    title: 'Rieducazione Posturale',
+    title: 'Recupero Post-Operatorio',
     dsc: 'manuali. Questo metodo aiuta a migliorare la postura',
     id: 4,
     img: '/images/rieducazione-posturale.webp',
   },
   {
-    title: 'Rieducazione Posturale',
+    title: 'Linfodrenaggio',
     dsc: 'La rieducazione posturale è un approccio terapeutico che mira a correggere, terapeutico che mira a correggere',
     id: 5,
     img: '/images/rieducazione-posturale.webp',
@@ -134,7 +134,7 @@ export const timelineItems = [
 ];
 
 export const therapies = {
-  terapiaManuale: {
+  recuperoPostOperatorio: {
     list: [
       'Tendinite',
       'Borsite',
@@ -227,7 +227,7 @@ export const therapies = {
       list: [
         {
           title: 'Cicatrici post-chirurgiche / post-traumatiche',
-          dsc: "prevenendo problemi posturali e retrazioni dei tessuti, migliorandone di conseguenza l'aspetto estetico",
+          dsc: "Prevenendo problemi posturali e retrazioni dei tessuti, migliorandone di conseguenza l'aspetto estetico",
         },
         {
           title: 'Patologie del sistema linfatico',
@@ -236,7 +236,7 @@ export const therapies = {
         {
           title:
             'Cellulite, riconosciuta come pannicolopatia edematofibrosclerotica (PEFS)',
-          dsc: "agendo sulle alterazioni del microcircolo e del tessuto adiposo, migliorando non solo il drenaggio dei liquidi in eccesso ma anche l'aspetto estetico della cute, riducendo la classica “buccia d'arancia” visibile sulle gambe",
+          dsc: "Agendo sulle alterazioni del microcircolo e del tessuto adiposo, migliorando non solo il drenaggio dei liquidi in eccesso ma anche l'aspetto estetico della cute, riducendo la classica “buccia d'arancia” visibile sulle gambe",
         },
         {
           title: 'Adiposità localizzata',

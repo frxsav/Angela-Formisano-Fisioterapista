@@ -158,7 +158,7 @@ export default function ContactForm() {
       </div>
       <button
         type="submit"
-        className="cursor-pointer md:w-[30%] text-xl font-semibold bg-cta-100 hover:bg-secondary-light transition-colors duration-300 text-primary-900 p-3 rounded-xl shadow-lg">
+        className="cursor-pointer md:w-[30%] text-xl font-semibold bg-cta-100 hover:bg-cta-900 hover:text-secondary-light transition-colors duration-300 text-primary-900 p-3 rounded-xl shadow-lg">
         Invia
       </button>
     </form>

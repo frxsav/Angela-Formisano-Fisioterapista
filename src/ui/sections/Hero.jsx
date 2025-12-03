@@ -16,9 +16,9 @@ export default function Hero() {
     <section
       id="hero-section"
       className="bg-[url('/images/trattamento-riabilitazione-posturale.webp')] bg-no-repeat bg-cover bg-center">
-      <div className="font-title min-h-[90vh] px-[10%] items-center justify-center flex lg:flex-row flex-col bg-primary-900/90 lg:pt-32 lg:gap-0 gap-6">
+      <div className="font-roboto min-h-[90vh] px-[10%] items-center justify-center flex lg:flex-row flex-col bg-primary-900/90 lg:pt-32 lg:gap-0 gap-6">
         <div className="flex flex-col gap-3 lg:w-[70%] items-center lg:items-start lg:order-first order-last">
-          <h1 className="lg:text-lg flex flex-col text-sm font-bold lg:text-start text-center text-ctext-light lg:tracking-wide tracking-normal uppercase text-shadow-sm font-text w-[80%]">
+          <h1 className="lg:text-lg flex flex-col text-sm font-bold lg:text-start text-center text-ctext-light lg:tracking-wide tracking-normal uppercase text-shadow-sm font-roboto w-[80%]">
             <span className="underline underline-offset-3 decoration-cta-100 decoration-2">
               Dott.ssa Angela Formisano
             </span>
@@ -30,13 +30,13 @@ export default function Hero() {
           </h2>
           <div className="flex lg:flex-row flex-col gap-6">
             <Link
-              className="lg:self-start font-semibold flex items-center gap-3 self-center text-center mt-4 border-1 border-cta-100 bg-cta-100 hover:bg-cta-100/75 duration-300 text-primary-900 text-lg py-3 px-6 rounded-full shadow-lg"
+              className="lg:self-start tracking-tighter font-semibold flex items-center gap-3 self-center text-center mt-4 border-1 border-cta-100 bg-cta-100 hover:bg-cta-100/75 duration-300 text-primary-900 text-lg py-3 px-6 rounded-full shadow-lg"
               href="#appointment">
               <IoMdCalendar className="text-2xl md:block hidden" />
               Prenota un appuntamento
             </Link>
             <Link
-              className="lg:self-start font-semibold self-center text-center mt-4 bg-secondary-light hover:bg-secondary-light/75 duration-300 text-primary-900 text-lg py-3 px-6 rounded-full shadow-lg"
+              className="lg:self-start font-semibold tracking-tighter self-center text-center mt-4 bg-secondary-light hover:bg-secondary-light/75 duration-300 text-primary-900 text-lg py-3 px-6 rounded-full shadow-lg"
               href="#appointment">
               Scopri i trattamenti
             </Link>
@@ -67,7 +67,7 @@ export default function Hero() {
               <h3 className="text-xl font-bold text-ctext">
                 Esperienza e Formazione
               </h3>
-              <p className="font-text text-lg leading-text text-ctext/75">
+              <p className="font-display text-lg leading-text text-ctext/75">
                 Anni di esperienza e continuo impegno nella formazione
                 professionale per offrire il miglior trattamento possibile
               </p>
@@ -79,7 +79,7 @@ export default function Hero() {
               <h3 className="text-xl font-bold text-ctext">
                 Trattamenti Personalizzati
               </h3>
-              <p className="font-text text-lg leading-text text-ctext/75">
+              <p className="font-display text-lg leading-text text-ctext/75">
                 Percorsi terapeutici su misura per ogni paziente
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function Hero() {
               <h3 className="text-xl font-bold text-ctext">
                 Strumentazione moderne
               </h3>
-              <p className="font-text text-lg leading-text text-ctext/75">
+              <p className="font-display text-lg leading-text text-ctext/75">
                 Utilizzo tecnologie ed attrezzature all'avanguardia per
                 garantire la miglior qualità ed efficacia dei trattamenti
               </p>
@@ -102,7 +102,7 @@ export default function Hero() {
               <h3 className="text-xl font-bold text-ctext">
                 Professionalità e Dedizione
               </h3>
-              <p className="font-text text-lg leading-text text-ctext/75">
+              <p className="font-display text-lg leading-text text-ctext/75">
                 Garantisco la massima professionalità e dedizione alla
                 risoluzione del problema in ogni fase del trattamento
               </p>

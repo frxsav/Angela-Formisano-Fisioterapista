@@ -28,7 +28,7 @@ export default function TreatmentBody(props) {
           {titleArray.map((item, index) => (
             <h1
               key={index}
-              className="lg:text-5xl text-4xl text-start font-title font-bold text-primary-900 text-shadow-xs">
+              className="lg:text-5xl text-4xl text-start font-roboto tracking-tighter font-bold text-primary-900 text-shadow-xs">
               {item}
             </h1>
           ))}
@@ -37,14 +37,14 @@ export default function TreatmentBody(props) {
         {subtitleArray.map((item, index) => (
           <h2
             key={index}
-            className="lg:text-3xl text-2xl font-bold text-start font-title text-ctext text-shadow-xs">
+            className="lg:text-3xl text-2xl font-semibold text-start font-display tracking-wide text-ctext">
             {item}
           </h2>
         ))}
         {dscArray.map((item, index) => (
           <p
             key={index}
-            className="font-text text-ctext md:text-2xl text-xl md:pt-0 pt-8">
+            className="font-display text-ctext text-xl md:pt-0 pt-8">
             {item}
           </p>
         ))}
@@ -62,9 +62,9 @@ export default function TreatmentBody(props) {
             <div className="p-2 bg-primary-100/20 rounded-full text-primary-100">
               <HiClock size={20} />
             </div>
-            <span className="font-bold text-primary-900">Recupero Rapido</span>
+            <span className="text-lg font-bold text-primary-900">Recupero Rapido</span>
           </div>
-          <p className="text-sm text-ctext/75">
+          <p className="text-ctext/75 font-display tracking-wider">
             Protocolli personalizzati per ridurre i tempi di guarigione fino al
             50%.
           </p>

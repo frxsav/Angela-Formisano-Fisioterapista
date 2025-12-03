@@ -17,7 +17,7 @@ export default function Timeline() {
                   'md:pr-8 pr-0 md:order-1 md:col-start-3'
             }`}>
             <div className="bg-white flex flex-col gap-4 p-6 rounded-3xl shadow-md">
-              <h4 className="text-xl font-bold font-title text-primary-900">
+              <h4 className="text-xl font-bold font-roboto tracking-tighter text-primary-900">
                 {item.title}
               </h4>
             </div>
@@ -44,7 +44,7 @@ export default function Timeline() {
               }`}
             />
             <p
-              className={`text-xl font-text font-bold text-ctext ${
+              className={`text-xl font-display font-bold text-ctext ${
                 (index + 1) % 2 === 0
                   ? /**Pari */
                     'md:order-1'

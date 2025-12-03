@@ -11,9 +11,9 @@ import {
 
 export default function FisioterapiaDermatofunzionale() {
   return (
-    <section className="flex flex-col font-title">
+    <section className="flex flex-col font-roboto">
       <MiniHero title="Fisioterapia Dermatofunzionale" />
-      <div className="bg-secondary-light py-32 flex flex-col text-ctext relative">
+      <div className="bg-secondary-light/75 py-32 flex flex-col text-ctext relative">
         <TreatmentBody therapy={therapies.fisioterapiaDermatofunzionale} />
         {/* Patologie */}
         <TreatmentPathologiesDetailed

@@ -11,9 +11,9 @@ import {
 
 export default function RieducazionePosturale() {
   return (
-    <section className="flex flex-col font-title">
+    <section className="flex flex-col font-roboto">
       <MiniHero title="Rieducazione Posturale" />
-      <div className="bg-secondary-light py-32 flex flex-col text-ctext relative">
+      <div className="bg-secondary-light/75 py-32 flex flex-col text-ctext relative">
         <TreatmentBody therapy={therapies.rieducazionePosturale} />
         {/* Patologie */}
         <TreatmentPathologies

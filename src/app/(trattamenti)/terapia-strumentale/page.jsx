@@ -18,9 +18,9 @@ export default function TerapiaStrumentale() {
     'elettrostimolazione',
   ];
   return (
-    <section className="flex flex-col font-title">
+    <section className="flex flex-col font-roboto">
       <MiniHero title="Terapia Strumentale" />
-      <div className="bg-secondary-light/50 md:py-32 py-16 flex flex-col text-ctext relative">
+      <div className="bg-secondary-light/75 md:py-32 py-16 flex flex-col text-ctext relative">
         {/* Main */}
         <TreatmentBody therapy={therapies.terapiaStrumentale} />
         {/* Patologie */}

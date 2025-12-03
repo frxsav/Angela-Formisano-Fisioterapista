@@ -4,10 +4,10 @@ import { ContattiSection, Timeline, MiniHero } from '@/ui';
 
 export default function About() {
   return (
-    <section className="flex flex-col font-title">
+    <section className="flex flex-col font-roboto">
       <MiniHero title="Chi Sono" />
-      <div className="w-full self-center bg-secondary-light relative z-20 py-16 flex justify-center">
-        <div className="flex flex-col bg-radial to-primary-900/10 from-secondary-light rounded-3xl shadow-lg gap-16 w-[90%]">
+      <div className="w-full self-center bg-secondary-light relative z-20 py-16 px-[10%] flex justify-center">
+        <div className="flex flex-col bg-radial to-primary-900/5 from-secondary-light rounded-3xl shadow-lg gap-16 border-1 border-primary-900/10">
           <div className="flex lg:flex-row flex-col px-8 lg:gap-32 gap-16 py-16 rounded-4xl">
             <Image
               src="/images/fisioterapista.png"
@@ -26,15 +26,15 @@ export default function About() {
                 Professione Sanitaria di Fisioterapista di Napoli, Avellino,
                 Benevento e Caserta n.3850
               </h4>
-              <ul className="flex flex-col list-disc pl-6 text-ctext/90 md:text-2xl text-xl font-text">
+              <ul className="flex flex-col list-disc pl-6 text-ctext/90 md:text-2xl text-xl font-display">
                 {studi.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
-              <h6 className="text-primary-900 md:text-xl text-lg font-semibold underline pt-4">
+              <h6 className="text-primary-900 md:text-xl text-lg font-semibold underline underline-offset-3 pt-4">
                 Aree di specializzazione:
               </h6>
-              <ul className="flex flex-col list-disc pl-6 text-ctext/90 md:text-2xl text-xl font-text">
+              <ul className="flex flex-col list-disc pl-6 text-ctext/90 md:text-2xl text-xl font-display">
                 {specializzazioni.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -46,7 +46,7 @@ export default function About() {
               Percorso di studi ed approccio
             </h3>
             <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
-            <Timeline></Timeline>
+            <Timeline />
           </div>
         </div>
       </div>

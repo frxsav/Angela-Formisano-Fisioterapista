@@ -9,7 +9,7 @@ export default function (props) {
             {props.therapies.title}
           </h2>
           <div className="border-t-5 border-primary-300 h-[1px] w-20"></div>
-          <p className="text-xl text-ctext/75 max-w-2xl mt-4 font-text">
+          <p className="text-xl text-ctext/75 max-w-2xl mt-4 font-display">
             {props.therapies.dsc}
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function (props) {
               </div>
 
               <div className="p-6 flex flex-col flex-grow">
-                <p className="text-ctext/75 mb-6 text-lg font-text">
+                <p className="text-ctext/75 mb-6 text-lg font-display">
                   {therapy.dsc}
                 </p>
               </div>

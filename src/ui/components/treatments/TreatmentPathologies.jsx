@@ -10,7 +10,7 @@ export default function TreatmentPathologies(props) {
         <h2 className="text-3xl font-bold text-primary-900 mb-4">
           {props.pathologies.title}
         </h2>
-        <p className="text-ctext/75 text-xl font-text">
+        <p className="text-ctext/75 text-xl font-display">
           {props.pathologies.dsc}
         </p>
       </div>
@@ -23,7 +23,7 @@ export default function TreatmentPathologies(props) {
             <div className="w-10 h-10 rounded-full bg-primary-100/20 flex items-center justify-center text-primary-100">
               <LuActivity />
             </div>
-            <span className="text-lg font-text text-ctext/75">{pathology}</span>
+            <span className="text-lg font-roboto tracking-tight text-ctext">{pathology}</span>
           </div>
         ))}
       </div>

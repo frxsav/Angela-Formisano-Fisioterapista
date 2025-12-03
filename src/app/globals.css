@@ -17,8 +17,8 @@
   --color-grey-blue: oklch(0.3957 0.0297 239.24);
   /* ... */
   --animate-shake: shake 0.2s ease-in-out;
-  --font-title: 'Montserrat', sans-serif;
-  --font-text: 'var(--font-cardo)', serif; /* Cardo */
+  --font-display: var(--font-display);
+  --font-roboto: var(--font-roboto);
   /* ... */
   --tracking-title: -3px;
   --leading-text: 1.5;
